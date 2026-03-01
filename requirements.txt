@@ -5,4 +5,6 @@ langchain-groq
 langsmith
 sqlmodel
 python-dotenv
+google-generativeai
+python-multipart
 requests
