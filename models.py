@@ -1,6 +1,7 @@
 from sqlmodel import SQLModel, Field, create_engine
 from typing import Optional
 from datetime import date
+import os
 
 class Patient(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
@@ -23,5 +24,11 @@ class Medicine(SQLModel, table=True):
     expiry_date: Optional[date] = None
 
     # --- DATABASE CONNECTION ENGINE ---
-sqlite_url = "sqlite:///nexus_pharmacy.db"
+if os.getenv("RAILWAY_ENVIRONMENT"):
+    # Save to the permanent Railway volume
+    sqlite_url = "sqlite:////app/data/nexus_pharmacy.db"
+else:
+    # Save locally on your laptop
+    sqlite_url = "sqlite:///nexus_pharmacy.db"
+
 engine = create_engine(sqlite_url)
