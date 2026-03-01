@@ -9,3 +9,4 @@ google-generativeai
 python-multipart
 requests
 litellm
+apscheduler
