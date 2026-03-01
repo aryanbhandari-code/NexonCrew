@@ -33,4 +33,5 @@ else:
     sqlite_url = "sqlite:///nexus_pharmacy_seed.db"
 
 # 2. Start the engine with the correct map
-engine = create_engine(sqlite_url)
+engine = create_engine(sqlite_url, connect_args={"check_same_thread": False})
+
