@@ -1,8 +1,10 @@
 import asyncio
 import smtplib
+import csv
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse
@@ -10,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from crewai import Task, Crew
-from sqlmodel import Session, select
+from sqlmodel import Session, select, SQLModel
 
 # Import your local database engine and tables
 from models import engine, Patient, Medicine
@@ -254,26 +256,46 @@ async def automated_3_day_reminder_loop():
         # Once you verify it works, change `60` to `21600` for a 6-hour loop.
         await asyncio.sleep(60) 
 
+# --- 1. THE SAFETY LOCK FOR THE AI LOOP ---
+async def delayed_ai_startup():
+    """Forces the AI to wait until the CSVs are fully loaded."""
+    print("⏳ AI Engine locked. Waiting 15 seconds for database stabilization...")
+    await asyncio.sleep(15)
+    print("🚀 Database locked and loaded. Waking up AI Outreach Protocol!")
+    
+    # Wrap the main loop in a fail-safe so it NEVER crashes the server
+    while True:
+        try:
+            await automated_3_day_reminder_loop()
+        except Exception as e:
+            print(f"⚠️ AI Loop hit a snag: {e}")
+            print("🔄 AI is taking a 60-second breather before trying again...")
+            await asyncio.sleep(60)
+
+# --- 2. THE MASTER STARTUP SEQUENCE ---
 @app.on_event("startup")
 async def start_background_tasks():
     print("⚙️ Initializing database tables in Railway Volume...")
     
-    # --- ⚠️ THE NUCLEAR RESET BUTTON ⚠️ ---
-    # Destroys the old tables so we can inject the massive CSV dataset.
-    # YOU MUST COMMENT THIS OUT AFTER IT RUNS SUCCESSFULLY ONCE!
-    SQLModel.metadata.drop_all(engine) 
+    # ⚠️ THE MASTER SWITCH: Set to True to wipe and load CSVs. 
+    # Set to False once your data is successfully on the dashboard!
+    RESET_DATABASE = True 
     
-    # 1. Create fresh, empty tables
+    if RESET_DATABASE:
+        print("⚠️ Wiping old database to prepare for fresh CSVs...")
+        SQLModel.metadata.drop_all(engine) 
+    
+    # Create fresh tables
     SQLModel.metadata.create_all(engine)
     
-    # 2. Inject the Full CSV Dataset
+    # Inject the Full CSV Dataset
     with Session(engine) as session:
         existing_patient = session.exec(select(Patient)).first()
         
         if not existing_patient:
-            print("📂 Reading massive CSV datasets...")
+            print("📂 Injecting massive CSV datasets...")
             
-            # --- A. LOAD MEDICINES FROM CSV ---
+            # --- A. LOAD MEDICINES ---
             if os.path.exists("products_policy_ready11_final.csv"):
                 with open("products_policy_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
                     reader = csv.DictReader(file)
@@ -289,26 +311,22 @@ async def start_background_tasks():
                         session.add(med)
                         med_count += 1
                         if med_count % 500 == 0:
-                            session.commit() # Batch commit
+                            session.commit() 
                 session.commit()
-                print(f"✅ {med_count} Medicines injected from CSV!")
-            else:
-                print("❌ ERROR: products_policy CSV not found!")
+                print(f"✅ {med_count} Medicines injected!")
 
-            # --- B. LOAD PATIENTS FROM CSV ---
+            # --- B. LOAD PATIENTS ---
             if os.path.exists("order_history_intelligence_ready11_final.csv"):
                 with open("order_history_intelligence_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
                     reader = csv.DictReader(file)
                     pat_count = 0
                     for row in reader:
                         trigger = str(row['refill_trigger']).strip().lower() == 'true'
-                        
-                        # Clean the runout date
                         raw_date = row['expected_runout_date'].split(' ')[0]
                         try:
                             clean_date = datetime.strptime(raw_date, "%m/%d/%Y").date()
                         except ValueError:
-                            clean_date = datetime.date.today() # Safe fallback
+                            clean_date = datetime.date.today() 
                         
                         patient = Patient(
                             patient_email=row['patient_email'],
@@ -324,22 +342,19 @@ async def start_background_tasks():
                         session.add(patient)
                         pat_count += 1
                         if pat_count % 500 == 0:
-                            session.commit() # Batch commit
-                            print(f"💾 Saved {pat_count} patients so far...")
+                            session.commit() 
                 session.commit()
-                print(f"✅ {pat_count} Patients injected from CSV!")
-            else:
-                print("❌ ERROR: order_history CSV not found!")
+                print(f"✅ {pat_count} Patients injected!")
                 
             print("🎉 FULL ENTERPRISE DATASET SUCCESSFULLY SAVED!")
 
-    # 3. Start the background loop safely
-    print("🚀 Starting AI Outreach Protocol...")
-    asyncio.create_task(automated_3_day_reminder_loop())
+    # 3. Start the AI Loop securely
+    asyncio.create_task(delayed_ai_startup())
 
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
 
