@@ -302,11 +302,21 @@ async def start_background_tasks():
                     med_count = 0
                     for row in reader:
                         req_rx = str(row['prescription_required']).strip().lower() == 'true'
+                        
+                        # --- THE DATE FIX ---
+                        raw_exp = str(row['expiry_date']).strip()
+                        try:
+                            # Convert '10/16/2026' to a real Python Date object
+                            exp_date = datetime.strptime(raw_exp, "%m/%d/%Y").date()
+                        except ValueError:
+                            # Safe fallback if a row has a blank or weird date
+                            exp_date = datetime.today().date()
+                        
                         med = Medicine(
                             name=row['product_name'],
                             stock_quantity=int(row['current_stock'] or 0),
                             requires_prescription=req_rx,
-                            expiry_date=row['expiry_date']
+                            expiry_date=exp_date  # Pass the cleaned object here!
                         )
                         session.add(med)
                         med_count += 1
@@ -355,6 +365,7 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
 
 
