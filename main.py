@@ -50,6 +50,12 @@ def send_real_email(recipient_email, patient_name, medicine_name, due_date):
 # --- 2. FASTAPI INITIALIZATION ---
 app = FastAPI()
 
+# --- SERVE FRONTEND UI ---
+@app.get("/")
+async def serve_ui():
+    """Serves the index.html file when users visit the main URL."""
+    return FileResponse("index.html")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -257,3 +263,4 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
