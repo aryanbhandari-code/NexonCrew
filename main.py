@@ -1,6 +1,7 @@
 import asyncio
 import smtplib
 import csv
+import shutil
 import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -256,115 +257,39 @@ async def automated_3_day_reminder_loop():
         # Once you verify it works, change `60` to `21600` for a 6-hour loop.
         await asyncio.sleep(60) 
 
-# --- 1. THE SAFETY LOCK FOR THE AI LOOP ---
-async def delayed_ai_startup():
-    """Forces the AI to wait until the CSVs are fully loaded."""
-    print("⏳ AI Engine locked. Waiting 15 seconds for database stabilization...")
-    await asyncio.sleep(15)
-    print("🚀 Database locked and loaded. Waking up AI Outreach Protocol!")
-    
-    # Wrap the main loop in a fail-safe so it NEVER crashes the server
-    while True:
-        try:
-            await automated_3_day_reminder_loop()
-        except Exception as e:
-            print(f"⚠️ AI Loop hit a snag: {e}")
-            print("🔄 AI is taking a 60-second breather before trying again...")
-            await asyncio.sleep(60)
 
-# --- 2. THE MASTER STARTUP SEQUENCE ---
+
 @app.on_event("startup")
 async def start_background_tasks():
-    print("⚙️ Initializing database tables in Railway Volume...")
+    print("⚙️ Checking Railway Volume...")
     
-    # ⚠️ THE MASTER SWITCH: Set to True to wipe and load CSVs. 
-    # Set to False once your data is successfully on the dashboard!
-    RESET_DATABASE = True 
+    # Define paths
+    railway_db_path = "/app/data/nexus_pharmacy.db"
+    seed_db_path = "nexus_pharmacy_seed.db"
     
-    if RESET_DATABASE:
-        print("⚠️ Wiping old database to prepare for fresh CSVs...")
-        SQLModel.metadata.drop_all(engine) 
+    # Check if we are in Railway and if the vault needs the database
+    if os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("RAILWAY_STATIC_URL"):
+        if not os.path.exists(railway_db_path):
+            if os.path.exists(seed_db_path):
+                print("📦 Copying pre-built seed database into the permanent vault...")
+                # Ensure the directory exists
+                os.makedirs(os.path.dirname(railway_db_path), exist_ok=True)
+                shutil.copyfile(seed_db_path, railway_db_path)
+                print("✅ Database successfully installed!")
+            else:
+                print("⚠️ WARNING: Seed database not found! Did you push it to GitHub?")
+        else:
+            print("✅ Database already exists in Railway volume. Ready to go.")
     
-    # Create fresh tables
-    SQLModel.metadata.create_all(engine)
-    
-    # Inject the Full CSV Dataset
-    with Session(engine) as session:
-        existing_patient = session.exec(select(Patient)).first()
-        
-        if not existing_patient:
-            print("📂 Injecting massive CSV datasets...")
-            
-            # --- A. LOAD MEDICINES ---
-            if os.path.exists("products_policy_ready11_final.csv"):
-                with open("products_policy_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
-                    reader = csv.DictReader(file)
-                    med_count = 0
-                    for row in reader:
-                        req_rx = str(row['prescription_required']).strip().lower() == 'true'
-                        
-                        # --- THE DATE FIX ---
-                        raw_exp = str(row['expiry_date']).strip()
-                        try:
-                            # Convert '10/16/2026' to a real Python Date object
-                            exp_date = datetime.strptime(raw_exp, "%m/%d/%Y").date()
-                        except ValueError:
-                            # Safe fallback if a row has a blank or weird date
-                            exp_date = datetime.today().date()
-                        
-                        med = Medicine(
-                            name=row['product_name'],
-                            stock_quantity=int(row['current_stock'] or 0),
-                            requires_prescription=req_rx,
-                            expiry_date=exp_date  # Pass the cleaned object here!
-                        )
-                        session.add(med)
-                        med_count += 1
-                        if med_count % 500 == 0:
-                            session.commit() 
-                session.commit()
-                print(f"✅ {med_count} Medicines injected!")
-
-            # --- B. LOAD PATIENTS ---
-            if os.path.exists("order_history_intelligence_ready11_final.csv"):
-                with open("order_history_intelligence_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
-                    reader = csv.DictReader(file)
-                    pat_count = 0
-                    for row in reader:
-                        trigger = str(row['refill_trigger']).strip().lower() == 'true'
-                        raw_date = row['expected_runout_date'].split(' ')[0]
-                        try:
-                            clean_date = datetime.strptime(raw_date, "%m/%d/%Y").date()
-                        except ValueError:
-                            clean_date = datetime.date.today() 
-                        
-                        patient = Patient(
-                            patient_email=row['patient_email'],
-                            patient_name=row['patient_id'],
-                            patient_age=int(float(row['patient_age'] or 0)),
-                            patient_gender=row['patient_gender'],
-                            allergies=row.get('allergies', 'None') or 'None',
-                            past_diseases=row.get('past_diseases', 'None') or 'None',
-                            needs_refill_for=row['product_name'],
-                            refill_due_date=clean_date,
-                            refill_trigger=trigger
-                        )
-                        session.add(patient)
-                        pat_count += 1
-                        if pat_count % 500 == 0:
-                            session.commit() 
-                session.commit()
-                print(f"✅ {pat_count} Patients injected!")
-                
-            print("🎉 FULL ENTERPRISE DATASET SUCCESSFULLY SAVED!")
-
-    # 3. Start the AI Loop securely
-    asyncio.create_task(delayed_ai_startup())
+    # 3. Start your background loop
+    print("🚀 Waking up AI Outreach Protocol...")
+    asyncio.create_task(automated_3_day_reminder_loop())
 
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
 
 
