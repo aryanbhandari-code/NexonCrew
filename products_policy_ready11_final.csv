@@ -1,0 +1,250 @@
+product_id,product_name,pzn,price_rec,descriptions,package_size_value,package_size_unit,current_stock,store_id,active_ingredient,prescription_required,is_sellable,block_reason,priority_fee_tier,expiry_date
+16066,"Panthenol Spray, 46,3 mg/g Schaum zur Anwendung auf der Haut",4020784,16.95,Schaumspray zur Anwendung auf der Haut. Fördert die Regeneration gereizter oder geschädigter Haut und spendet Feuchtigkeit.,130,g,38,STORE_001,Panthenol,FALSE,TRUE,,2,10/16/2026
+976308,NORSAN Omega-3 Total,13476520,27,"Flüssiges Omega-3-Öl aus Fisch. Unterstützt Herz, Gehirn und Gelenke.",200,ml,28,STORE_001,NORSAN,FALSE,TRUE,,3,7/8/2026
+977179,NORSAN Omega-3 Vegan,13476394,29,Pflanzliches Omega-3 aus Algen. Geeignet für Vegetarier und Veganer.,100,ml,14,STORE_001,NORSAN,FALSE,TRUE,,1,1/6/2027
+993687,NORSAN Omega-3 Kapseln,13512730,29,Omega-3-Kapseln zur täglichen Nahrungsergänzung.,120,st,42,STORE_001,NORSAN,FALSE,TRUE,,1,6/29/2026
+1225428,Vividrin® iso EDO® antiallergische Augentropfen,16507327,8.28,Konservierungsmittelfreie Augentropfen zur Linderung allergischer Beschwerden wie Juckreiz und Rötung.,30x0.5,ml,7,STORE_002,Vividrin®,FALSE,TRUE,,2,12/30/2026
+202796,Aqualibra 80 mg/90 mg/180 mg Filmtabletten,795287,27.82,Pflanzliches Arzneimittel zur Unterstützung der Blasenfunktion.,60,st,20,STORE_001,Aqualibra,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,11/23/2026
+1103035,Vitasprint Pro Energie,14050243,15.95,Nahrungsergänzungsmittel mit B-Vitaminen und Aminosäuren zur Verringerung von Müdigkeit.,8,st,38,STORE_003,Vitasprint,FALSE,TRUE,,3,11/9/2026
+27955,Cystinol akut®,7114824,26.5,Pflanzliches Arzneimittel zur Behandlung akuter Harnwegsinfektionen.,60,st,18,STORE_001,Cystinol,FALSE,TRUE,,2,9/26/2026
+30955,Cromo-ratiopharm® Augentropfen Einzeldosis,4884527,7.59,Antiallergische Augentropfen zur Vorbeugung und Behandlung von allergischen Augenbeschwerden.,20x0.5,ml,22,STORE_001,Cromo-ratiopharm®,FALSE,TRUE,,2,9/30/2026
+1162261,Kijimea Reizdarm PRO,15999676,38.99,Medizinisches Produkt zur Linderung von Symptomen des Reizdarmsyndroms wie Blähungen und Bauchschmerzen.,28,st,10,STORE_002,Kijimea,FALSE,TRUE,,3,8/14/2026
+1204782,Mucosolvan 1 mal täglich Retardkapseln,15210915,39.97,Langwirksames Arzneimittel zur Schleimlösung bei Husten.,50,st,10,STORE_001,Mucosolvan,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,4/27/2026
+1210016,OMNi-BiOTiC SR-9 mit B-Vitaminen,16487346,44.5,Probiotikum mit B-Vitaminen zur Unterstützung der Darmflora und des Energiestoffwechsels.,28x3,g,23,STORE_001,OMNi-BiOTiC,FALSE,TRUE,,1,2/22/2027
+1245942,Osa Schorf Spray,16781761,15.45,Pflegespray zur sanften Entfernung von Milchschorf und trockener Kopfhaut bei Babys.,30,ml,35,STORE_002,Osa,FALSE,TRUE,,1,6/23/2026
+1247528,Multivitamin Fruchtgummibärchen vegan u zuckerfrei,16908486,12.74,"Vegane, zuckerfreie Multivitamin-Gummibärchen zur täglichen Versorgung mit Vitaminen.",60,st,39,STORE_003,Multivitamin,FALSE,TRUE,,3,3/26/2026
+1273105,"Iberogast® Classic, Flüssigkeit zum Einnehmen",16507540,28.98,Pflanzliches Arzneimittel bei Magen-Darm-Beschwerden.,50,ml,23,STORE_001,Iberogast®,FALSE,TRUE,,3,12/23/2026
+1358905,COLPOFIX®,18389398,49.6,Vaginalgel zur Unterstützung der Gesundheit der Zervixschleimhaut.,40,ml,2,STORE_002,COLPOFIX®,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,8/9/2026
+1293377,Augentropfen RedCare,17396686,12.69,Befeuchtende Augentropfen bei trockenen oder gereizten Augen.,10,ml,21,STORE_001,Augentropfen,FALSE,TRUE,,1,8/5/2026
+1313639,MULTILAC Darmsynbiotikum,17931783,9.99,Kombination aus Pro- und Präbiotika zur Unterstützung der Verdauung.,10,st,1,STORE_001,MULTILAC,FALSE,TRUE,,3,1/20/2027
+1319766,SAW PALMETO (SÄGEPALME) 350 mg,18216723,8.47,Pflanzliches Nahrungsergänzungsmittel zur Unterstützung der Prostatafunktion.,100,st,23,STORE_001,SAW,FALSE,TRUE,,1,1/16/2027
+1329121,Paracetamol apodiscounter 500 mg Tabletten,18188323,2.06,Schmerz- und fiebersenkendes Arzneimittel.,20,st,43,STORE_001,Paracetamol,FALSE,TRUE,,3,7/11/2026
+1352774,Prostata Men Kapseln,18657640,19.99,Nahrungsergänzungsmittel zur Unterstützung der Prostatagesundheit.,60,st,29,STORE_001,Prostata,FALSE,TRUE,,1,9/29/2026
+1357649,Natural Intimate Creme,18769758,18.9,Pflegecreme zur Befeuchtung und zum Schutz des sensiblen Intimbereichs.,50,ml,37,STORE_001,Natural,FALSE,TRUE,,1,1/15/2027
+1358513,proBIO 6 Probiotik Kapseln APOMIA,18317737,34.9,Probiotische Kapseln zur Unterstützung einer gesunden Darmflora.,30,st,1,STORE_001,proBIO,FALSE,TRUE,,2,6/23/2026
+1363580,Eucerin DERMOPURE Triple Effect Reinigungsgel,18222095,17.25,"Reinigungsgel für unreine Haut, reduziert Unreinheiten und Pickelmale.",150,ml,20,STORE_001,Eucerin,FALSE,TRUE,,2,4/2/2026
+1381140,frida baby FlakeFixer,19140755,0,Sanfte Pflege zur Entfernung von Milchschorf bei Babys.,1,st,32,STORE_001,frida,FALSE,TRUE,,3,12/5/2026
+1383626,Vitasprint Duo Energie,18760556,16.95,Nahrungsergänzungsmittel mit Vitaminen und Mineralstoffen zur Steigerung der Energie.,20,st,11,STORE_001,Vitasprint,FALSE,TRUE,,1,12/24/2026
+11334,"Bepanthen WUND- UND HEILSALBE, 50 mg/g Salbe",1580241,7.69,Salbe zur Unterstützung der Wundheilung und Pflege trockener Haut.,20,g,21,STORE_001,Bepanthen,FALSE,TRUE,,1,5/29/2026
+1391185,V-Biotics Flora Complex,19296256,19.9,Probiotisches Nahrungsergänzungsmittel zur Unterstützung von Darm und Immunsystem.,19,g,43,STORE_002,V-Biotics,FALSE,TRUE,,1,9/15/2026
+1403860,Aveeno Skin Relief Body Lotion,19342855,14.99,Beruhigende Körperlotion für sehr trockene und juckende Haut.,300,ml,24,STORE_001,Aveeno,FALSE,TRUE,,3,7/21/2026
+1434198,Centrum Vital+ Mentale Leistung,19486198,19.95,Multivitaminpräparat zur Unterstützung der geistigen Leistungsfähigkeit.,30,st,48,STORE_002,Centrum,FALSE,TRUE,,3,11/9/2026
+1434864,Redcare Wundschutzcreme,19280947,14.39,Schutzcreme für gereizte und empfindliche Haut.,100,ml,26,STORE_001,Redcare,FALSE,TRUE,,2,1/31/2027
+1435154,Cetaphil Sanft glättende SA Reinigung,19720688,13.95,Sanfte Reinigung mit Salicylsäure für raue und unebene Haut.,236,ml,41,STORE_001,Cetaphil,FALSE,TRUE,,3,11/25/2026
+14176,"Magnesium Verla® N Dragées, magensaftresistente Tabletten",3554928,6.4,Magnesiumpräparat zur Unterstützung von Muskeln und Nerven.,50,st,27,STORE_001,Magnesium,FALSE,TRUE,,2,12/2/2026
+704523,"Livocab® direkt Augentropfen, 0,05 % Augentropfen, Suspension",676714,14.99,Schnell wirksame Augentropfen bei allergischen Augenbeschwerden.,4,ml,15,STORE_001,Livocab®,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,10/29/2026
+185422,"Cetirizin HEXAL® Tropfen bei Allergien, 10 mg/ml Tropfen zum Einnehmen, Lösung",2579607,13.19,Antihistaminikum zur Linderung von Allergiesymptomen.,10,ml,14,STORE_001,Cetirizin,FALSE,TRUE,,1,4/9/2026
+198010,"Loperamid akut - 1 A Pharma®, 2 mg Hartkapseln",1338066,3.93,Arzneimittel zur Behandlung von akutem Durchfall.,10,st,46,STORE_001,Loperamid,FALSE,TRUE,,1,2/18/2027
+202006,Ramipril - 1 A Pharma® 10 mg Tabletten,766794,12.59,Verschreibungspflichtiges Arzneimittel zur Behandlung von Bluthochdruck.,20,st,43,STORE_001,Ramipril,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,3/17/2026
+306595,"GRANU FINK® femina, Hartkapseln",1499852,20.29,Pflanzliches Arzneimittel zur Unterstützung der Blasengesundheit bei Frauen.,30,st,2,STORE_001,GRANU,FALSE,TRUE,,1,8/10/2026
+324024,Vitasprint B12 Kapseln,4909523,17.04,Vitamin-B12-Präparat zur Unterstützung von Energie und Nervenfunktion.,20,st,36,STORE_001,Vitasprint,FALSE,TRUE,,1,12/13/2026
+332568,Sinupret® Saft,605588,13.3,Pflanzliches Arzneimittel bei Nasennebenhöhlenentzündungen.,100,ml,6,STORE_001,Sinupret®,FALSE,TRUE,,3,5/31/2026
+335765,Nurofen 200 mg Schmelztabletten Lemon,2547582,10.98,Ibuprofen-Schmerzmittel in schnell löslicher Form.,12,st,20,STORE_001,Nurofen,FALSE,TRUE,,1,10/10/2026
+363715,Vitamin B-Komplex-ratiopharm,4132750,24.97,Kombination verschiedener B-Vitamine zur Unterstützung des Nervensystems.,60,st,8,STORE_001,Vitamin,FALSE,TRUE,,2,12/21/2026
+368333,Calmvalera Hevert Tropfen,6560421,35.97,Homöopathisches Arzneimittel bei nervöser Unruhe und Schlafstörungen.,100,ml,38,STORE_001,Calmvalera,FALSE,TRUE,,1,9/27/2026
+1248085,femiLoges® 4 mg magensaftresistente Tabletten,16815862,20.44,Hormonfreies Arzneimittel zur Linderung von Wechseljahresbeschwerden.,30,st,17,STORE_001,femiLoges®,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/28/2026
+376212,Umckaloabo® Saft für Kinder,8871266,13.15,Pflanzlicher Saft zur Behandlung von Atemwegsinfektionen bei Kindern.,120,ml,3,STORE_001,Umckaloabo®,FALSE,TRUE,,1,4/10/2026
+368367,"DulcoLax® Dragées, 5 mg magensaftresistente Tabletten",6800196,22.9,Abführmittel zur kurzfristigen Behandlung von Verstopfung.,100,st,24,STORE_001,DulcoLax®,FALSE,TRUE,,3,4/17/2026
+717525,Diclo-ratiopharm Schmerzgel,4704198,8.89,Schmerzgel zur äußeren Anwendung bei Muskel- und Gelenkschmerzen.,50,g,13,STORE_001,Diclo-ratiopharm,FALSE,TRUE,,3,3/30/2026
+772646,"Minoxidil BIO-H-TIN-Pharma 20 mg/ml Spray zur Anwendung auf der Haut (Kopfhaut), Lösung",10391763,22.5,Lösung zur Anwendung auf der Kopfhaut bei erblich bedingtem Haarausfall.,60,ml,49,STORE_001,Minoxidil,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,8/16/2026
+790415,Hyaluron-ratiopharm® Augentropfen,10810214,13.74,Befeuchtende Augentropfen mit Hyaluronsäure bei trockenen Augen.,10,ml,8,STORE_001,Hyaluron-ratiopharm®,FALSE,TRUE,,2,11/1/2026
+790661,"FeniHydrocort Creme 0,25 %",10796980,8.59,Kortisonhaltige Creme zur Behandlung leichter Hautentzündungen und Juckreiz.,20,g,25,STORE_001,FeniHydrocort,FALSE,TRUE,,2,12/14/2026
+879236,Eucerin UreaRepair PLUS Lotion 10%,11678159,27.75,Intensiv pflegende Lotion für sehr trockene und raue Haut.,400,ml,1,STORE_001,Eucerin,FALSE,TRUE,,3,9/3/2026
+899231,Vigantolvit 2000 I.E. Vitamin D3,12423869,17.99,Vitamin-D-Präparat zur Unterstützung von Knochen und Immunsystem.,120,st,19,STORE_001,Vigantolvit,FALSE,TRUE,,3,9/23/2026
+9000001,Paracetamol 500 mg,4020784,25,Fever and mild pain relief,10,tablet,120,STORE_002,Paracetamol,FALSE,TRUE,,2,12/21/2026
+9000002,Dolo 650,13476520,35,High-dose paracetamol for fever and body pain,15,tablet,100,STORE_003,Paracetamol,FALSE,TRUE,,3,9/27/2026
+9000003,Crocin Advance,13476394,30,Fast-acting pain and fever relief,20,tablet,90,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,11/28/2026
+9000004,Cetirizine 10 mg,13512730,20,Anti-allergic tablet for cold and allergy,10,tablet,150,STORE_INDIA,Cetirizine,FALSE,TRUE,,1,4/10/2026
+9000005,Azithromycin 500 mg,16507327,120,Antibiotic for bacterial infections,5,tablet,60,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,4/17/2026
+9000006,Amoxicillin 500 mg,795287,110,Broad-spectrum antibiotic,10,capsule,70,STORE_001,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,3/30/2026
+9000007,Pantoprazole 40 mg,14050243,95,Reduces stomach acid and treats GERD,15,tablet,80,STORE_002,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,8/16/2026
+9000008,Metformin 500 mg,7114824,60,Controls blood sugar in type 2 diabetes,20,tablet,110,STORE_003,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,11/1/2026
+9000009,Amlodipine 5 mg,4884527,55,Treats high blood pressure,15,tablet,85,STORE_002,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,12/14/2026
+9000010,ORS Powder,15999676,20,Prevents dehydration due to diarrhea,1,sachet,200,STORE_001,Oral Rehydration Salts,FALSE,TRUE,,1,9/3/2026
+9000011,Ibuprofen 400 mg,15210915,45,Pain and inflammation relief,10,tablet,95,STORE_INDIA,Ibuprofen,FALSE,TRUE,,2,9/23/2026
+9000012,Aspirin 75 mg,16487346,20,Blood thinner and pain relief,14,tablet,110,STORE_INDIA,Aspirin,FALSE,TRUE,,1,12/21/2026
+9000013,Omeprazole 20 mg,16781761,90,Treats acid reflux and ulcers,15,capsule,80,STORE_INDIA,Omeprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/27/2026
+9000014,Levocetirizine 5 mg,16908486,35,Anti-allergy medication,10,tablet,130,STORE_003,Levocetirizine,FALSE,TRUE,,1,11/28/2026
+9000015,Vitamin C Tablets,16507540,60,Boosts immunity and prevents deficiency,20,tablet,160,STORE_INDIA,Ascorbic Acid,FALSE,TRUE,,1,4/10/2026
+9000016,Zincovit Syrup,18389398,85,Multivitamin supplement,1,bottle,70,STORE_INDIA,Zinc + Vitamins,FALSE,TRUE,,2,4/17/2026
+9000017,Losartan 50 mg,17396686,75,Controls high blood pressure,15,tablet,90,STORE_INDIA,Losartan,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,3/30/2026
+9000018,Atorvastatin 10 mg,17931783,110,Lowers cholesterol levels,10,tablet,85,STORE_INDIA,Atorvastatin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,8/16/2026
+9000019,Salbutamol Inhaler,18216723,150,Relief from asthma and breathing issues,1,inhaler,60,STORE_INDIA,Salbutamol,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/1/2026
+9000020,Loperamide 2 mg,18188323,40,Treats acute diarrhea,10,capsule,140,STORE_003,Loperamide,FALSE,TRUE,,1,12/14/2026
+9000021,Diclofenac 50 mg,18657640,40,Pain and inflammation relief,10,tablet,100,STORE_INDIA,Diclofenac,FALSE,TRUE,,2,9/3/2026
+9000022,Ranitidine 150 mg,18769758,55,Reduces stomach acid,15,tablet,85,STORE_INDIA,Ranitidine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/23/2026
+9000023,Domperidone 10 mg,18317737,65,Relieves nausea and vomiting,10,tablet,90,STORE_INDIA,Domperidone,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/21/2026
+9000024,Ondansetron 4 mg,18222095,70,Prevents nausea and vomiting,10,tablet,75,STORE_INDIA,Ondansetron,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/27/2026
+9000025,Cough Syrup (Benadryl),19140755,95,Relief from cough and cold,1,bottle,120,STORE_INDIA,Diphenhydramine,FALSE,TRUE,,2,11/28/2026
+9000026,Digene Tablets,18760556,45,Antacid for acidity relief,15,tablet,150,STORE_INDIA,Antacid Combination,FALSE,TRUE,,1,4/10/2026
+9000027,Calcium + Vitamin D3,1580241,120,Bone health supplement,15,tablet,130,STORE_INDIA,Calcium Carbonate,FALSE,TRUE,,1,4/17/2026
+9000028,Iron Folic Acid Tablets,19296256,35,Treats iron deficiency anemia,30,tablet,160,STORE_INDIA,Iron + Folic Acid,FALSE,TRUE,,1,3/30/2026
+9000029,Insulin Injection,19342855,450,Controls blood glucose levels,1,vial,40,STORE_INDIA,Insulin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,8/16/2026
+9000030,Glimepiride 2 mg,19486198,85,Treats type 2 diabetes,15,tablet,70,STORE_INDIA,Glimepiride,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,11/1/2026
+9000031,Dicyclomine 10 mg,19280947,50,Relieves abdominal cramps,10,tablet,95,STORE_INDIA,Dicyclomine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/14/2026
+9000032,Clotrimazole Cream,19720688,60,Treats fungal skin infections,1,tube,140,STORE_INDIA,Clotrimazole,FALSE,TRUE,,1,9/3/2026
+9000033,Betadine Solution,3554928,75,Antiseptic for wound care,1,bottle,110,STORE_INDIA,Povidone Iodine,FALSE,TRUE,,2,9/23/2026
+9000034,Neosporin Ointment,676714,90,Prevents bacterial infections,1,tube,100,STORE_INDIA,Neomycin Combination,FALSE,TRUE,,2,12/21/2026
+9000035,Lactulose Syrup,2579607,130,Treats constipation,1,bottle,85,STORE_INDIA,Lactulose,FALSE,TRUE,,1,9/27/2026
+9000036,Montelukast 10 mg,1338066,140,Prevents asthma and allergies,10,tablet,65,STORE_INDIA,Montelukast,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/28/2026
+9000037,Budesonide Inhaler,766794,220,Long-term asthma control,1,inhaler,55,STORE_INDIA,Budesonide,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,4/10/2026
+9000038,Glyceryl Trinitrate,1499852,95,Treats chest pain (angina),10,tablet,60,STORE_INDIA,Nitroglycerin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,4/17/2026
+9000039,Cefixime 200 mg,4909523,160,Antibiotic for infections,10,tablet,50,STORE_INDIA,Cefixime,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,3/30/2026
+9000040,Mupirocin Ointment,605588,85,Treats bacterial skin infections,1,tube,105,STORE_INDIA,Mupirocin,FALSE,TRUE,,2,8/16/2026
+9000041,Paracetamol Syrup,2547582,40,Fever relief for children,1,bottle,180,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,11/1/2026
+9000042,Albendazole 400 mg,4132750,30,Deworming medication,1,tablet,170,STORE_INDIA,Albendazole,FALSE,TRUE,,1,12/14/2026
+9000043,Hydrochlorothiazide 12.5 mg,6560421,70,Treats high blood pressure,15,tablet,80,STORE_INDIA,Hydrochlorothiazide,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/3/2026
+9000044,Famotidine 20 mg,16815862,65,Reduces stomach acid,10,tablet,90,STORE_INDIA,Famotidine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/23/2026
+9000045,Baclofen 10 mg,8871266,110,Muscle relaxant,10,tablet,60,STORE_INDIA,Baclofen,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,12/21/2026
+9000046,Tramadol 50 mg,6800196,150,Moderate to severe pain relief,10,capsule,45,STORE_INDIA,Tramadol,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,9/27/2026
+9000047,Dolo 650 mg,4704198,32.08,Pain and fever relief,30,capsule,181,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,1/9/2028
+9000048,Cetirizine 500 mg,10391763,24.38,Anti-allergic,30,capsule,105,STORE_INDIA,Cetirizine,FALSE,TRUE,,3,10/2/2026
+9000049,Cetirizine 650 mg,10810214,17.54,Anti-allergic,15,capsule,199,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,1/23/2028
+9000050,Azithromycin 500 mg,10796980,148.24,Antibiotic,15,capsule,76,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,4/19/2027
+9000051,Amoxicillin 650 mg,11678159,123.9,Antibiotic,15,sachet,57,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,7/21/2027
+9000052,Dolo 650 mg,12423869,43.04,Pain and fever relief,20,capsule,69,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,12/14/2026
+9000053,Dolo 250 mg,4020784,41.17,Pain and fever relief,15,sachet,171,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,11/22/2027
+9000054,Pantoprazole 650 mg,13476520,89.3,Acid reducer,30,capsule,40,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,11/26/2027
+9000055,Amlodipine 250 mg,13476394,69.98,Blood pressure,10,sachet,190,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,4/5/2027
+9000056,ORS 500 mg,13512730,17.47,Rehydration,20,sachet,41,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,7/19/2027
+9000057,Metformin 500 mg,16507327,65.37,Diabetes control,15,capsule,167,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,6/1/2027
+9000058,Azithromycin 250 mg,795287,146.51,Antibiotic,15,sachet,99,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,7/15/2027
+9000059,Amoxicillin 500 mg,14050243,110.17,Antibiotic,15,capsule,189,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,1/22/2028
+9000060,Pantoprazole 500 mg,7114824,115.46,Acid reducer,10,tablet,172,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,6/30/2027
+9000061,Amlodipine 250 mg,4884527,70.7,Blood pressure,15,tablet,67,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/8/2027
+9000062,Amlodipine 500 mg,15999676,46.21,Blood pressure,10,tablet,86,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/1/2027
+9000063,Amlodipine 500 mg,15210915,59.29,Blood pressure,20,sachet,41,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,10/15/2026
+9000064,ORS 500 mg,16487346,20.87,Rehydration,30,tablet,113,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,2,7/21/2027
+9000065,Azithromycin 500 mg,16781761,127.36,Antibiotic,20,tablet,177,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,12/12/2026
+9000066,Metformin 650 mg,16908486,68.65,Diabetes control,20,sachet,159,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/23/2027
+9000067,ORS 500 mg,16507540,25.19,Rehydration,20,capsule,186,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,4/16/2027
+9000068,Paracetamol 250 mg,18389398,23.2,Pain and fever relief,15,sachet,145,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,9/17/2027
+9000069,Crocin 250 mg,17396686,26.83,Pain and fever relief,20,tablet,114,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,8/10/2027
+9000070,Paracetamol 650 mg,17931783,26.65,Pain and fever relief,10,tablet,160,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,5/15/2027
+9000071,Crocin 250 mg,18216723,27.61,Pain and fever relief,20,capsule,54,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,5/3/2027
+9000072,Amlodipine 250 mg,18188323,68.14,Blood pressure,20,sachet,54,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,7/31/2027
+9000073,Dolo 650 mg,18657640,30.08,Pain and fever relief,30,capsule,140,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,6/23/2027
+9000074,Paracetamol 650 mg,18769758,30.75,Pain and fever relief,15,capsule,165,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,10/1/2027
+9000075,Amoxicillin 650 mg,18317737,121.1,Antibiotic,30,tablet,80,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/25/2027
+9000076,Metformin 650 mg,18222095,75.72,Diabetes control,10,sachet,47,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,1/18/2028
+9000077,Amoxicillin 650 mg,19140755,94.99,Antibiotic,15,tablet,156,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,12/21/2026
+9000078,Azithromycin 650 mg,18760556,97.37,Antibiotic,10,sachet,193,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/26/2027
+9000079,Crocin 250 mg,1580241,36.57,Pain and fever relief,10,capsule,85,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,12/5/2027
+9000080,Cetirizine 250 mg,19296256,16.01,Anti-allergic,20,sachet,48,STORE_INDIA,Cetirizine,FALSE,TRUE,,3,8/20/2027
+9000081,Azithromycin 500 mg,19342855,105.49,Antibiotic,15,capsule,117,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,10/29/2027
+9000082,Azithromycin 500 mg,19486198,113.13,Antibiotic,10,capsule,87,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/5/2027
+9000083,Cetirizine 650 mg,19280947,25.83,Anti-allergic,20,sachet,94,STORE_INDIA,Cetirizine,FALSE,TRUE,,1,10/11/2027
+9000084,Pantoprazole 250 mg,19720688,95.92,Acid reducer,15,capsule,163,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,6/1/2027
+9000085,Cetirizine 650 mg,3554928,17.64,Anti-allergic,20,tablet,119,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,9/10/2026
+9000086,Azithromycin 650 mg,676714,154.9,Antibiotic,10,capsule,174,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/8/2027
+9000087,Azithromycin 250 mg,2579607,143,Antibiotic,15,tablet,148,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/8/2026
+9000088,Azithromycin 250 mg,1338066,100.68,Antibiotic,30,capsule,111,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,8/8/2027
+9000089,ORS 650 mg,766794,23.7,Rehydration,30,tablet,59,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,3,7/9/2027
+9000090,Amlodipine 250 mg,1499852,58.13,Blood pressure,20,tablet,59,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,1/20/2027
+9000091,Amoxicillin 250 mg,4909523,134.35,Antibiotic,10,tablet,42,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,7/4/2027
+9000092,Crocin 250 mg,605588,38.34,Pain and fever relief,30,capsule,103,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,3/3/2027
+9000093,Amlodipine 250 mg,2547582,57.87,Blood pressure,15,sachet,79,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,9/27/2027
+9000094,Metformin 250 mg,4132750,70.4,Diabetes control,15,capsule,104,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/22/2027
+9000095,Azithromycin 500 mg,6560421,118.88,Antibiotic,15,capsule,142,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,2/23/2027
+9000096,Crocin 250 mg,16815862,33.47,Pain and fever relief,15,sachet,191,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,2/6/2027
+9000097,Azithromycin 650 mg,8871266,127.59,Antibiotic,15,sachet,110,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,10/28/2026
+9000098,ORS 500 mg,6800196,22.94,Rehydration,30,tablet,91,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,12/7/2027
+9000099,Pantoprazole 650 mg,4704198,79.7,Acid reducer,15,tablet,94,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,1/29/2027
+9000100,Dolo 250 mg,10391763,41.9,Pain and fever relief,30,capsule,141,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,10/25/2027
+9000101,Metformin 650 mg,10810214,55,Diabetes control,20,tablet,171,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,4/19/2027
+9000102,Pantoprazole 650 mg,10796980,107.09,Acid reducer,15,tablet,71,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,1/25/2027
+9000103,Pantoprazole 250 mg,11678159,83.25,Acid reducer,15,capsule,192,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,12/9/2027
+9000104,Cetirizine 250 mg,12423869,23.21,Anti-allergic,10,sachet,173,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,5/5/2027
+9000105,Amoxicillin 650 mg,4020784,123.31,Antibiotic,30,capsule,186,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,3/11/2027
+9000106,Crocin 500 mg,13476520,28.86,Pain and fever relief,30,capsule,61,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,11/19/2027
+9000107,Pantoprazole 650 mg,13476394,115.74,Acid reducer,15,tablet,60,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,6/29/2027
+9000108,Metformin 500 mg,13512730,51.87,Diabetes control,10,tablet,70,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,12/27/2026
+9000109,Amlodipine 650 mg,16507327,58.87,Blood pressure,10,capsule,145,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/29/2027
+9000110,Pantoprazole 650 mg,795287,105.6,Acid reducer,20,sachet,138,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,12/7/2027
+9000111,ORS 650 mg,14050243,19.53,Rehydration,10,sachet,65,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,3,9/11/2026
+9000112,Dolo 500 mg,7114824,31.68,Pain and fever relief,20,sachet,49,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,12/29/2027
+9000113,Amoxicillin 500 mg,4884527,141.79,Antibiotic,20,capsule,189,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,12/11/2026
+9000114,Cetirizine 650 mg,15999676,19.35,Anti-allergic,30,capsule,81,STORE_INDIA,Cetirizine,FALSE,TRUE,,1,12/2/2026
+9000115,Amlodipine 650 mg,15210915,60.92,Blood pressure,20,tablet,43,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,7/9/2027
+9000116,Amoxicillin 650 mg,16487346,137.55,Antibiotic,15,tablet,54,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,11/25/2027
+9000117,Dolo 250 mg,16781761,32.39,Pain and fever relief,15,sachet,85,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,11/29/2026
+9000118,Paracetamol 650 mg,16908486,30.59,Pain and fever relief,30,tablet,194,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,9/26/2026
+9000119,Amlodipine 650 mg,16507540,69.33,Blood pressure,30,capsule,143,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,8/2/2027
+9000120,Crocin 650 mg,18389398,37.56,Pain and fever relief,10,tablet,130,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,12/26/2026
+9000121,Dolo 250 mg,17396686,41.27,Pain and fever relief,30,sachet,126,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,11/22/2027
+9000122,Dolo 500 mg,17931783,41.02,Pain and fever relief,15,tablet,147,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,11/29/2026
+9000123,Crocin 500 mg,18216723,37.94,Pain and fever relief,30,capsule,171,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,6/19/2027
+9000124,Cetirizine 250 mg,18188323,19.9,Anti-allergic,20,capsule,106,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,4/25/2027
+9000125,Paracetamol 500 mg,18657640,20.99,Pain and fever relief,15,capsule,87,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,9/22/2026
+9000126,Crocin 650 mg,18769758,35.02,Pain and fever relief,30,capsule,91,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,10/26/2027
+9000127,ORS 650 mg,18317737,21.36,Rehydration,10,capsule,149,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,2,12/24/2026
+9000128,Azithromycin 500 mg,18222095,155.94,Antibiotic,20,sachet,102,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,7/24/2027
+9000129,Azithromycin 500 mg,19140755,112.28,Antibiotic,20,tablet,42,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/11/2026
+9000130,Paracetamol 500 mg,18760556,25.92,Pain and fever relief,20,sachet,56,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,12/17/2027
+9000131,Amoxicillin 650 mg,1580241,132.37,Antibiotic,10,capsule,168,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,6/4/2027
+9000132,Paracetamol 500 mg,19296256,25.04,Pain and fever relief,30,sachet,75,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,8/28/2026
+9000133,Paracetamol 500 mg,19342855,30.21,Pain and fever relief,20,capsule,93,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,9/9/2027
+9000134,Dolo 650 mg,19486198,38.36,Pain and fever relief,30,capsule,48,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,2/5/2027
+9000135,Cetirizine 250 mg,19280947,17.51,Anti-allergic,30,capsule,113,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,4/5/2027
+9000136,Pantoprazole 500 mg,19720688,89.6,Acid reducer,10,sachet,151,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,7/21/2027
+9000137,Crocin 250 mg,3554928,34.33,Pain and fever relief,30,capsule,98,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,5/3/2027
+9000138,Crocin 650 mg,676714,31.55,Pain and fever relief,20,sachet,121,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,3/26/2027
+9000139,Dolo 500 mg,2579607,37.53,Pain and fever relief,20,tablet,165,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,1/12/2027
+9000140,Amoxicillin 650 mg,1338066,94.44,Antibiotic,10,capsule,76,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,3/13/2027
+9000141,Pantoprazole 250 mg,766794,109.41,Acid reducer,15,sachet,144,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/12/2027
+9000142,Dolo 650 mg,1499852,44.37,Pain and fever relief,15,capsule,98,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,12/2/2027
+9000143,Dolo 650 mg,4909523,35.2,Pain and fever relief,15,sachet,154,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,10/31/2026
+9000144,Crocin 250 mg,605588,34.9,Pain and fever relief,15,tablet,82,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,4/12/2027
+9000145,Dolo 650 mg,2547582,39.93,Pain and fever relief,30,sachet,144,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,4/1/2027
+9000146,Amlodipine 250 mg,4132750,53.43,Blood pressure,20,tablet,74,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,9/22/2027
+9000147,Metformin 250 mg,6560421,74.57,Diabetes control,10,sachet,198,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,1/29/2027
+9000148,Cetirizine 500 mg,16815862,18.47,Anti-allergic,10,sachet,73,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,9/15/2026
+9000149,ORS 250 mg,8871266,17.83,Rehydration,20,tablet,172,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,12/5/2026
+9000150,Dolo 650 mg,6800196,42.12,Pain and fever relief,30,sachet,98,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,9/20/2026
+9000151,Crocin 250 mg,4704198,24.97,Pain and fever relief,20,sachet,60,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,5/12/2027
+9000152,Pantoprazole 250 mg,10391763,114.15,Acid reducer,10,sachet,123,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/6/2027
+9000153,Crocin 250 mg,10810214,27.88,Pain and fever relief,15,sachet,165,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,5/18/2027
+9000154,Dolo 250 mg,10796980,32.05,Pain and fever relief,20,tablet,50,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,9/24/2027
+9000155,Crocin 500 mg,11678159,37.34,Pain and fever relief,20,tablet,129,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,11/30/2027
+9000156,Amlodipine 650 mg,12423869,46.01,Blood pressure,10,capsule,171,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,2/22/2027
+9000157,ORS 650 mg,4020784,22.97,Rehydration,15,capsule,82,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,2,12/5/2027
+9000158,Amoxicillin 250 mg,13476520,101.09,Antibiotic,20,tablet,139,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,10/21/2027
+9000159,Metformin 650 mg,13476394,50.85,Diabetes control,20,capsule,197,STORE_INDIA,Metformin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,2/17/2028
+9000160,Crocin 650 mg,13512730,34.34,Pain and fever relief,30,tablet,48,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,3/30/2027
+9000161,Azithromycin 250 mg,16507327,124.09,Antibiotic,30,sachet,178,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/13/2027
+9000162,Azithromycin 500 mg,795287,117.78,Antibiotic,15,sachet,138,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,2/24/2027
+9000163,Paracetamol 500 mg,14050243,24.45,Pain and fever relief,30,tablet,95,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,8/31/2026
+9000164,Paracetamol 650 mg,7114824,21.31,Pain and fever relief,10,tablet,160,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,12/5/2026
+9000165,Crocin 250 mg,4884527,28.12,Pain and fever relief,15,tablet,56,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,12/30/2026
+9000166,ORS 650 mg,15999676,16.1,Rehydration,15,sachet,150,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,6/4/2027
+9000167,Amoxicillin 650 mg,15210915,130.24,Antibiotic,30,sachet,180,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/27/2027
+9000168,Pantoprazole 650 mg,16487346,119.84,Acid reducer,15,tablet,96,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,2/3/2028
+9000169,ORS 250 mg,16781761,16.36,Rehydration,30,sachet,68,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,1,6/9/2027
+9000170,Azithromycin 500 mg,16908486,131.42,Antibiotic,30,tablet,113,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,6/15/2027
+9000171,Amoxicillin 500 mg,16507540,93.18,Antibiotic,30,sachet,144,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,12/27/2027
+9000172,Azithromycin 500 mg,18389398,103.34,Antibiotic,10,tablet,59,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,5/1/2027
+9000173,Pantoprazole 250 mg,17396686,114.65,Acid reducer,30,tablet,64,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/3/2027
+9000174,Dolo 650 mg,17931783,30.35,Pain and fever relief,20,capsule,117,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,10/7/2026
+9000175,Azithromycin 250 mg,18216723,111.59,Antibiotic,15,capsule,187,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,7/4/2027
+9000176,Cetirizine 650 mg,18188323,22.03,Anti-allergic,15,capsule,165,STORE_INDIA,Cetirizine,FALSE,TRUE,,2,9/12/2026
+9000177,Paracetamol 250 mg,18657640,31.27,Pain and fever relief,30,tablet,114,STORE_INDIA,Paracetamol,FALSE,TRUE,,3,12/24/2027
+9000178,Azithromycin 650 mg,18769758,145.12,Antibiotic,15,tablet,178,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,5/23/2027
+9000179,ORS 650 mg,18317737,20.75,Rehydration,15,tablet,82,STORE_INDIA,Oral Rehydration Salts,FALSE,TRUE,,3,2/7/2028
+9000180,Pantoprazole 650 mg,18222095,77.69,Acid reducer,15,tablet,147,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,8/28/2027
+9000181,Azithromycin 500 mg,19140755,109.54,Antibiotic,15,capsule,171,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,2/24/2027
+9000182,Amlodipine 250 mg,18760556,61.69,Blood pressure,10,capsule,71,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,2/5/2028
+9000183,Cetirizine 250 mg,1580241,19,Anti-allergic,15,tablet,126,STORE_INDIA,Cetirizine,FALSE,TRUE,,3,8/30/2027
+9000184,Crocin 500 mg,19296256,27.54,Pain and fever relief,15,sachet,48,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,1/5/2027
+9000185,Crocin 250 mg,19342855,31.28,Pain and fever relief,10,tablet,79,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,6/18/2027
+9000186,Amlodipine 250 mg,19486198,50.09,Blood pressure,10,capsule,161,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,10/13/2027
+9000187,Cetirizine 500 mg,19280947,18.43,Anti-allergic,10,sachet,57,STORE_INDIA,Cetirizine,FALSE,TRUE,,1,3/21/2027
+9000188,Crocin 250 mg,19720688,33.98,Pain and fever relief,20,tablet,65,STORE_INDIA,Paracetamol,FALSE,TRUE,,2,8/23/2027
+9000189,Amlodipine 250 mg,3554928,57.23,Blood pressure,10,capsule,113,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,12/4/2027
+9000190,Pantoprazole 250 mg,676714,89.26,Acid reducer,30,tablet,179,STORE_INDIA,Pantoprazole,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,10/8/2027
+9000191,Azithromycin 500 mg,2579607,126.11,Antibiotic,30,sachet,187,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,6/25/2027
+9000192,Amlodipine 650 mg,1338066,59.02,Blood pressure,10,capsule,109,STORE_INDIA,Amlodipine,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,10/22/2026
+9000193,Paracetamol 650 mg,766794,25.66,Pain and fever relief,20,capsule,200,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,11/25/2027
+9000194,Amoxicillin 500 mg,1499852,138.47,Antibiotic,30,tablet,115,STORE_INDIA,Amoxicillin,TRUE,FALSE,PRESCRIPTION_REQUIRED,3,6/11/2027
+9000195,Azithromycin 250 mg,4909523,118,Antibiotic,10,capsule,105,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,1,11/11/2026
+9000196,Azithromycin 500 mg,605588,98.6,Antibiotic,15,sachet,51,STORE_INDIA,Azithromycin,TRUE,FALSE,PRESCRIPTION_REQUIRED,2,11/12/2027
+9000197,Crocin 250 mg,2547582,30.53,Pain and fever relief,30,capsule,55,STORE_INDIA,Paracetamol,FALSE,TRUE,,1,9/17/2026

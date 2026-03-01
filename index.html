@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Core // AI Pharmacy Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- CORE THEME & ANIMATIONS --- */
+        :root {
+            --bg-deep: #020617;
+            --panel-bg: rgba(15, 23, 42, 0.75);
+            --cyan-neon: #06b6d4;
+            --cyan-glow: rgba(6, 182, 212, 0.5);
+            --green-neon: #10b981;
+            --red-neon: #ef4444;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 30px 30px; }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 5px var(--cyan-glow); }
+            50% { box-shadow: 0 0 20px var(--cyan-glow); }
+            100% { box-shadow: 0 0 5px var(--cyan-glow); }
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        /* --- LAYOUT --- */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--cyan-glow);
+            padding-bottom: 15px;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 0 10px var(--cyan-neon);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 10px; height: 10px;
+            background-color: var(--green-neon);
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 10px var(--green-neon);
+            animation: blink 2s infinite;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        /* --- PANELS --- */
+        .panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5), 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .panel::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cyan-neon), transparent);
+        }
+
+        .panel h3 {
+            margin-top: 0;
+            color: var(--cyan-neon);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px dashed var(--cyan-glow);
+            padding-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* --- CHAT INTERFACE --- */
+        #chatBox {
+            height: 400px;
+            overflow-y: auto;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid var(--cyan-glow);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-family: 'Fira Code', monospace; /* Terminal look */
+            font-size: 13px;
+        }
+
+        #chatBox::-webkit-scrollbar { width: 8px; }
+        #chatBox::-webkit-scrollbar-thumb { background: var(--cyan-glow); border-radius: 4px; }
+
+        .user-msg { text-align: right; margin: 10px 0; }
+        .user-msg span {
+            background: rgba(2, 132, 199, 0.3);
+            border: 1px solid var(--cyan-neon);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 12px 12px 0 12px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(2, 132, 199, 0.4);
+        }
+
+        .nexus-msg { text-align: left; margin: 10px 0; }
+        .nexus-msg-content {
+            background: rgba(6, 182, 212, 0.1);
+            border-left: 3px solid var(--cyan-neon);
+            color: var(--text-main);
+            padding: 12px 15px;
+            border-radius: 0 12px 12px 12px;
+            display: inline-block;
+            max-width: 85%;
+            line-height: 1.5;
+        }
+
+        /* FORCING BACKEND ACCORDION INTO DARK MODE */
+        details {
+            background: rgba(0,0,0,0.6) !important;
+            color: var(--text-muted) !important;
+            border: 1px dashed var(--cyan-glow) !important;
+            box-shadow: none !important;
+        }
+        summary { color: var(--cyan-neon) !important; font-family: 'Rajdhani', sans-serif; font-size: 15px; }
+
+        /* --- INPUTS & CONTROLS --- */
+        .controls-row { display: flex; gap: 10px; margin-top: 10px; }
+        
+        input[type="text"], select, input[type="file"] {
+            background: rgba(0,0,0,0.5);
+            border: 1px solid var(--cyan-glow);
+            color: var(--cyan-neon);
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Fira Code', monospace;
+            flex-grow: 1;
+            outline: none;
+            transition: 0.3s;
+        }
+        input[type="text"]:focus, select:focus { border-color: var(--cyan-neon); box-shadow: 0 0 10px var(--cyan-glow); }
+        
+        select option { background: var(--bg-deep); color: var(--text-main); }
+
+        button {
+            font-family: 'Rajdhani', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: transparent;
+            color: var(--cyan-neon);
+            border: 1px solid var(--cyan-neon);
+        }
+        .btn-primary:hover {
+            background: var(--cyan-glow);
+            color: #fff;
+            box-shadow: 0 0 15px var(--cyan-neon);
+        }
+
+        .btn-danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--red-neon);
+            border: 1px solid var(--red-neon);
+        }
+        .btn-danger:hover {
+            background: rgba(239, 68, 68, 0.3);
+            box-shadow: 0 0 15px var(--red-neon);
+            color: #fff;
+        }
+
+        .btn-scan {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--green-neon);
+            border: 1px solid var(--green-neon);
+        }
+        .btn-scan:hover {
+            background: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 0 15px var(--green-neon);
+            color: #fff;
+        }
+
+        /* --- DATA OUTPUT WINDOWS --- */
+        .report-output {
+            margin-top: 15px;
+            font-size: 13px;
+            background: rgba(0,0,0,0.6);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            font-family: 'Fira Code', monospace;
+            color: var(--cyan-neon);
+            line-height: 1.6;
+        }
+        
+        /* Mobile adjustment */
+        @media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><span class="status-dot"></span>NEXUS CORE // V.2.0</h1>
+        <div style="color: var(--cyan-neon); letter-spacing: 5px; font-size: 14px; font-weight: 600;">AUTONOMOUS PHARMACY INTELLIGENCE</div>
+    </div>
+
+    <div class="dashboard-grid">
+        
+        <div class="panel" style="animation: pulseGlow 4s infinite;">
+            <h3>[01] Copilot Interface</h3>
+            
+            <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <span style="color: var(--text-muted); font-size: 14px; text-transform: uppercase;">Target Identity:</span>
+                <select id="patientSelector">
+                    <option value="testuser0@example.com">[!] PATIENT A: testuser0@example.com (DB Match | NSAID Allergy Detected)</option>
+                    <option value="aryanbhandari621@gmail.com">[✓] PATIENT B: aryanbhandari621@gmail.com (DB Match | Clean History)</option>
+                    <option value="unknown_guest@example.com">[?] PATIENT C: unknown_guest@example.com (Unregistered Profile)</option>
+                </select>
+            </div>
+
+            <div id="chatBox">
+                <div class="nexus-msg"><div class="nexus-msg-content"><b style="color: var(--cyan-neon);">SYS.NEXUS:</b> Initialization complete. Clinical safety protocols are ACTIVE. Awaiting patient input...</div></div>
+            </div>
+            
+            <div class="controls-row">
+                <input type="file" id="rxUpload" accept="image/*,.pdf" style="width: 30%;">
+                <button class="btn-primary" onclick="uploadPrescription()">[ SCAN RX ]</button>
+                <span id="uploadStatus" style="color: var(--green-neon); margin-left: 10px; font-weight: bold; align-self: center; font-family: 'Fira Code', monospace;"></span>
+            </div>
+
+            <div class="controls-row" style="margin-top: 15px;">
+                <input type="text" id="chatInput" placeholder="Enter command/symptom parameters...">
+                <button class="btn-primary" onclick="sendMessage()">[ TRANSMIT ]</button>
+                <button class="btn-scan" id="micBtn" onclick="startVoice()">🎤 AUDIO</button>
+            </div>
+        </div>
+
+        <div class="right-col" style="display: flex; flex-direction: column; gap: 25px;">
+            
+            <div class="panel">
+                <h3>[02] Supply Chain Matrix</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <button class="btn-primary" onclick="fetchAdminData()">[ SYNC DB METRICS ]</button>
+                    <button class="btn-danger" onclick="trigger7DayReminders()">[ EXECUTE OUTREACH ]</button>
+                </div>
+                <div id="adminOutput" class="report-output" style="color: var(--text-muted);">Awaiting sync command...</div>
+            </div>
+
+            <div class="panel">
+                <h3>[03] Predictive Analytics</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <button class="btn-primary" onclick="runPrediction()">[ RUN HISTORICAL MODEL ]</button>
+                    <div id="predictOutput" class="report-output" style="color: var(--text-muted);">Internal SQL DB trend analysis offline.</div>
+                </div>
+
+                <div>
+                    <button class="btn-scan" onclick="runEnvironmentalScan()">[ RUN ENVIRONMENTAL SCAN ]</button>
+                    <div id="envOutput" class="report-output" style="color: var(--text-muted);">Live API meteorological & epidemiological feed offline.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chatBox');
+        const chatInput = document.getElementById('chatInput');
+        let verifiedPrescriptionData = "";
+
+        async function uploadPrescription() {
+            const fileInput = document.getElementById('rxUpload');
+            if (fileInput.files.length === 0) { alert("ERROR: Provide file parameters."); return; }
+            document.getElementById('uploadStatus').innerText = "PROCESSING...";
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+            try {
+                const response = await fetch('http://localhost:8000/upload', { method: 'POST', body: formData });
+                const data = await response.json();
+                verifiedPrescriptionData = data.extracted_text;
+                document.getElementById('uploadStatus').innerText = "VERIFIED";
+                chatBox.innerHTML += `<div class="nexus-msg"><div class="nexus-msg-content" style="border-left-color: var(--green-neon);"><b style="color: var(--green-neon);">VISION AI:</b><br> Data extracted and verified in temporary memory:<br>${verifiedPrescriptionData}</div></div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch (error) { document.getElementById('uploadStatus').style.color = "var(--red-neon)"; document.getElementById('uploadStatus').innerText = "FAILED"; }
+        }
+
+        async function sendMessage() {
+            const text = chatInput.value;
+            if (!text && !verifiedPrescriptionData) return;
+            
+            if (text) {
+                chatBox.innerHTML += `<div class="user-msg"><span>> ${text}</span></div>`;
+            }
+            chatInput.value = '';
+
+            let contextText = text;
+            if (verifiedPrescriptionData !== "") {
+                contextText = text + "\n\n [SYSTEM NOTE: User provided verified prescription: " + verifiedPrescriptionData + "].";
+                verifiedPrescriptionData = ""; 
+                document.getElementById('uploadStatus').innerText = "";
+                document.getElementById('rxUpload').value = "";
+            }
+
+            const typingId = "typing-" + Date.now();
+            chatBox.innerHTML += `<div id="${typingId}" class="nexus-msg"><div class="nexus-msg-content" style="color: var(--cyan-neon); animation: blink 1.5s infinite;">Processing Safety Algorithms...</div></div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            try {
+                const activeEmail = document.getElementById('patientSelector').value;
+                const response = await fetch('http://localhost:8000/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: contextText, email: activeEmail })
+                });
+                
+                document.getElementById(typingId).remove();
+                const data = await response.json();
+                
+                chatBox.innerHTML += `<div class="nexus-msg"><div class="nexus-msg-content"><b style="color: var(--cyan-neon);">SYS.NEXUS:</b><br>${data.response}</div></div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+                
+                speakResponse("Protocol executed. See display.");
+            } catch(e) { document.getElementById(typingId).innerHTML = "<span style='color: var(--red-neon);'>CONNECTION LOST.</span>"; }
+        }
+
+        function startVoice() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-IN'; 
+            recognition.start();
+            recognition.onresult = function(event) {
+                chatInput.value = event.results[0][0].transcript;
+                sendMessage();
+            };
+        }
+
+        function speakResponse(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // --- ADMIN & PREDICTION ---
+        async function fetchAdminData() {
+            const out = document.getElementById('adminOutput');
+            out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--cyan-neon);'>Establishing DB Handshake...</span>";
+            try {
+                const response = await fetch('http://localhost:8000/api/admin');
+                const data = await response.json();
+                
+                let html = `<b style="font-size: 15px; color: #fff;">SYSTEM KPIs:</b> Total SKUs: [${data.stats.total_medicines}] | <span style="color:#f59e0b">Low Stock: [${data.stats.low_stock}]</span> | <span style="color:var(--red-neon)">Depleted: [${data.stats.out_of_stock}]</span><hr style="border-color: rgba(6,182,212,0.2); margin: 15px 0;">`;
+                
+                html += `<b style="color: var(--red-neon);">🚨 7-DAY CRITICAL RUNOUT WINDOW:</b><ul style="margin-top:5px; padding-left: 20px;">`;
+                if(data.refills.length === 0) html += `<li style="color: var(--green-neon);">All optimal. Zero critical events predicted.</li>`;
+                data.refills.forEach(r => { html += `<li><b style="color: #fff;">${r.patient_name}</b> exhausts <span style="color: var(--cyan-neon);">${r.needs_refill_for}</span> by <b style="color: var(--red-neon);">${r.refill_due_date}</b></li>`; });
+                html += `</ul><hr style="border-color: rgba(6,182,212,0.2); margin: 15px 0;">`;
+
+                html += `<b style="color: var(--cyan-neon);">📦 SECURE INVENTORY LOG:</b>
+                         <div style="max-height: 250px; overflow-y: auto; border: 1px solid rgba(6,182,212,0.3); padding: 10px; margin-top: 10px; border-radius: 4px; background: rgba(0,0,0,0.5);">
+                         <ul style="margin:0; padding-left: 20px;">`;
+                
+                data.inventory.forEach(i => { 
+                    const stockColor = i.stock_quantity < 15 ? 'color: var(--red-neon);' : 'color: var(--green-neon);';
+                    const expDate = i.expiry_date ? i.expiry_date : 'N/A';
+                    html += `<li style="margin-bottom: 8px; border-bottom: 1px dashed rgba(148,163,184,0.2); padding-bottom: 4px;">
+                                <span style="color: #fff; font-size: 14px;">${i.name}</span><br>
+                                QTY: <span style="${stockColor} font-weight:bold;">[${i.stock_quantity}]</span> | 
+                                RX: <span style="color: var(--text-muted);">${i.requires_prescription}</span> | 
+                                EXP: <span style="color: #c084fc;">${expDate}</span>
+                             </li>`; 
+                });
+                
+                html += `</ul></div>`;
+                out.innerHTML = html;
+            } catch (e) { out.innerHTML = "<span style='color:var(--red-neon);'>ERROR: DATABASE UNREACHABLE.</span>"; }
+        }
+
+        async function trigger7DayReminders() {
+            alert("SYS WARNING: Initiating automated outreach to critical patients...");
+            try {
+                const response = await fetch('http://localhost:8000/api/send_weekly_reminders', { method: 'POST' });
+                const result = await response.json();
+                alert(">> TRANSMISSION SUCCESS: " + result.message);
+            } catch (e) { alert("ERROR: Outreach server offline."); }
+        }
+
+        async function runPrediction() {
+            const out = document.getElementById('predictOutput');
+            out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--cyan-neon);'>Executing internal SQL heuristic models... (Est. 15s)</span>";
+            try {
+                const response = await fetch('http://localhost:8000/api/predict');
+                const data = await response.json();
+                out.innerHTML = data.report.replace(/\n/g, '<br>');
+                out.style.color = "var(--cyan-neon)";
+            } catch (e) { out.innerHTML = "<span style='color:var(--red-neon);'>MODEL FAILURE.</span>"; }
+        }
+
+        async function runEnvironmentalScan() {
+            const out = document.getElementById('envOutput');
+            out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--green-neon);'>Uplinking to Open-Meteo & Epidemic feeds... (Est. 15s)</span>";
+            try {
+                const response = await fetch('http://localhost:8000/api/environmental_alerts');
+                const data = await response.json();
+                out.innerHTML = data.report.replace(/\n/g, '<br>');
+                out.style.color = "var(--green-neon)";
+            } catch (e) { out.innerHTML = "<span style='color:var(--red-neon);'>UPLINK FAILURE.</span>"; }
+        }
+    </script>
+</body>
+</html>

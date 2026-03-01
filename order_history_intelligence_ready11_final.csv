@@ -1,0 +1,203 @@
+patient_id,patient_age,patient_gender,last_purchase_date,product_name,quantity_purchased,total_price_eur,dosage_frequency,prescription_required,dosage_per_day,days_covered,expected_runout_date,days_remaining,refill_trigger,patient_email,allergies,past_diseases,next_appointment_date
+PAT001,45,F,3/15/2024,"Panthenol Spray, 46,3 mg/g Schaum zur Anwendung auf der Haut",1,16.95,Once daily,FALSE,1,1,3/16/2024 0:00,-714,TRUE,testuser0@example.com,NSAIDs,Type 2 Diabetes,2/26/2026
+PAT002,62,M,3/14/2024,NORSAN Omega-3 Total,2,54,Once daily,FALSE,1,2,3/16/2024 0:00,-714,TRUE,testuser1@example.com,NSAIDs,None,3/27/2026
+PAT003,38,F,3/14/2024,Vividrin® iso EDO® antiallergische Augentropfen,1,8.28,Twice daily,FALSE,2,0.5,3/14/2024 12:00,-716,TRUE,testuser2@example.com,Sulfa Drugs,Type 2 Diabetes,2/26/2026
+PAT004,55,M,3/13/2024,Mucosolvan 1 mal täglich Retardkapseln,1,39.97,Once daily,TRUE,1,1,3/14/2024 0:00,-716,TRUE,testuser3@example.com,None,Hypertension,2/18/2026
+PAT005,29,F,3/12/2024,Paracetamol apodiscounter 500 mg Tabletten,3,6.18,As needed,FALSE,1,3,3/15/2024 0:00,-715,TRUE,testuser4@example.com,Penicillin,Type 2 Diabetes,3/11/2026
+PAT001,45,F,3/10/2024,"Iberogast® Classic, Flüssigkeit zum Einnehmen",1,28.98,Three times daily,FALSE,1,1,3/11/2024 0:00,-719,TRUE,testuser0@example.com,None,Type 2 Diabetes,3/8/2026
+PAT006,71,M,3/9/2024,Ramipril - 1 A Pharma® 10 mg Tabletten,2,25.18,Once daily,TRUE,1,2,3/11/2024 0:00,-719,TRUE,testuser5@example.com,Sulfa Drugs,Type 2 Diabetes,2/18/2026
+PAT007,33,F,3/9/2024,Centrum Vital+ Mentale Leistung,1,19.95,Once daily,FALSE,1,1,3/10/2024 0:00,-720,TRUE,testuser6@example.com,Sulfa Drugs,Asthma,3/23/2026
+PAT008,42,M,3/8/2024,"Minoxidil BIO-H-TIN-Pharma 20 mg/ml Spray zur Anwendung auf der Haut (Kopfhaut), Lösung",1,22.5,Twice daily,TRUE,2,0.5,3/8/2024 12:00,-722,TRUE,testuser7@example.com,NSAIDs,Hypertension,3/19/2026
+PAT002,62,M,3/7/2024,"Cetirizin HEXAL® Tropfen bei Allergien, 10 mg/ml Tropfen zum Einnehmen, Lösung",1,13.19,Once daily,FALSE,1,1,3/8/2024 0:00,-722,TRUE,testuser1@example.com,Sulfa Drugs,Hypertension,3/9/2026
+PAT009,58,F,3/6/2024,Prostata Men Kapseln,1,19.99,Twice daily,FALSE,2,0.5,3/6/2024 12:00,-724,TRUE,testuser8@example.com,None,Type 2 Diabetes,2/20/2026
+PAT010,27,F,3/5/2024,Natural Intimate Creme,1,18.9,As needed,FALSE,1,1,3/6/2024 0:00,-724,TRUE,testuser9@example.com,Penicillin,Hypertension,3/4/2026
+PAT003,38,F,3/4/2024,NORSAN Omega-3 Vegan,1,29,Once daily,FALSE,1,1,3/5/2024 0:00,-725,TRUE,testuser2@example.com,Sulfa Drugs,Asthma,2/17/2026
+PAT011,64,M,3/3/2024,Cystinol akut®,2,53,Three times daily,FALSE,1,2,3/5/2024 0:00,-725,TRUE,testuser10@example.com,Sulfa Drugs,Hypertension,2/18/2026
+PAT012,50,F,3/2/2024,Kijimea Reizdarm PRO,1,38.99,Once daily,FALSE,1,1,3/3/2024 0:00,-727,TRUE,testuser11@example.com,Sulfa Drugs,Type 2 Diabetes,3/13/2026
+PAT006,71,M,3/1/2024,Nurofen 200 mg Schmelztabletten Lemon,1,10.98,As needed,FALSE,1,1,3/2/2024 0:00,-728,TRUE,testuser5@example.com,Sulfa Drugs,Hypertension,3/6/2026
+PAT013,31,M,2/29/2024,Eucerin DERMOPURE Triple Effect Reinigungsgel,1,17.25,Once daily,FALSE,1,1,3/1/2024 0:00,-729,TRUE,testuser12@example.com,Penicillin,Asthma,3/8/2026
+PAT014,47,F,2/28/2024,OMNi-BiOTiC SR-9 mit B-Vitaminen,1,44.5,Once daily,FALSE,1,1,2/29/2024 0:00,-730,TRUE,testuser13@example.com,Sulfa Drugs,Asthma,2/24/2026
+PAT015,39,M,2/27/2024,Vitasprint Pro Energie,2,31.9,Once daily,FALSE,1,2,2/29/2024 0:00,-730,TRUE,testuser14@example.com,Sulfa Drugs,Hypertension,3/3/2026
+PAT001,45,F,2/25/2024,Aveeno Skin Relief Body Lotion,1,14.99,Twice daily,FALSE,2,0.5,2/25/2024 12:00,-734,TRUE,testuser0@example.com,None,None,3/9/2026
+PAT016,53,F,2/24/2024,femiLoges® 4 mg magensaftresistente Tabletten,1,20.44,Once daily,TRUE,1,1,2/25/2024 0:00,-734,TRUE,testuser15@example.com,None,Hypertension,3/17/2026
+PAT017,68,M,2/23/2024,Vigantolvit 2000 I.E. Vitamin D3,1,17.99,Once daily,FALSE,1,1,2/24/2024 0:00,-735,TRUE,testuser16@example.com,Sulfa Drugs,Hypertension,3/23/2026
+PAT018,36,F,2/22/2024,Eucerin UreaRepair PLUS Lotion 10%,1,27.75,Once daily,FALSE,1,1,2/23/2024 0:00,-736,TRUE,testuser17@example.com,None,Type 2 Diabetes,3/25/2026
+PAT008,42,M,2/21/2024,Diclo-ratiopharm Schmerzgel,1,8.89,Three times daily,FALSE,1,1,2/22/2024 0:00,-737,TRUE,testuser7@example.com,Sulfa Drugs,Type 2 Diabetes,3/18/2026
+PAT019,44,F,2/20/2024,Calmvalera Hevert Tropfen,1,35.97,Twice daily,FALSE,2,0.5,2/20/2024 12:00,-739,TRUE,testuser18@example.com,None,Hypertension,3/19/2026
+PAT020,60,M,2/19/2024,COLPOFIX®,1,49.6,As needed,TRUE,1,1,2/20/2024 0:00,-739,TRUE,testuser19@example.com,NSAIDs,None,3/14/2026
+PAT002,62,M,2/18/2024,Sinupret® Saft,1,13.3,Three times daily,FALSE,1,1,2/19/2024 0:00,-740,TRUE,testuser1@example.com,None,Asthma,3/17/2026
+PAT011,64,M,2/17/2024,Vitasprint B12 Kapseln,1,17.04,Once daily,FALSE,1,1,2/18/2024 0:00,-741,TRUE,testuser10@example.com,Penicillin,None,2/26/2026
+PAT021,28,F,2/16/2024,frida baby FlakeFixer,1,0,As needed,FALSE,1,1,2/17/2024 0:00,-742,TRUE,testuser20@example.com,Penicillin,None,3/7/2026
+PAT022,52,M,2/15/2024,proBIO 6 Probiotik Kapseln APOMIA,1,34.9,Once daily,FALSE,1,1,2/16/2024 0:00,-743,TRUE,testuser21@example.com,Penicillin,Hypertension,2/17/2026
+PAT023,41,F,2/14/2024,Redcare Wundschutzcreme,1,14.39,As needed,FALSE,1,1,2/15/2024 0:00,-744,TRUE,testuser22@example.com,NSAIDs,Type 2 Diabetes,2/24/2026
+PAT024,57,M,2/13/2024,Umckaloabo® Saft für Kinder,2,26.3,Three times daily,FALSE,1,2,2/15/2024 0:00,-744,TRUE,testuser23@example.com,Penicillin,Hypertension,3/7/2026
+PAT003,38,F,2/12/2024,Hyaluron-ratiopharm® Augentropfen,1,13.74,Twice daily,FALSE,2,0.5,2/12/2024 12:00,-747,TRUE,testuser2@example.com,None,Type 2 Diabetes,3/26/2026
+PAT025,63,F,2/11/2024,"DulcoLax® Dragées, 5 mg magensaftresistente Tabletten",1,22.9,As needed,FALSE,1,1,2/12/2024 0:00,-747,TRUE,testuser24@example.com,Penicillin,None,2/22/2026
+PAT026,35,M,2/10/2024,"Bepanthen WUND- UND HEILSALBE, 50 mg/g Salbe",1,7.69,Twice daily,FALSE,2,0.5,2/10/2024 12:00,-749,TRUE,testuser25@example.com,None,Hypertension,2/28/2026
+PAT001,45,F,2/9/2024,"Magnesium Verla® N Dragées, magensaftresistente Tabletten",1,6.4,Once daily,FALSE,1,1,2/10/2024 0:00,-749,TRUE,testuser0@example.com,Penicillin,Asthma,3/20/2026
+PAT027,49,F,2/8/2024,V-Biotics Flora Complex,1,19.9,Once daily,FALSE,1,1,2/9/2024 0:00,-750,TRUE,testuser26@example.com,NSAIDs,Type 2 Diabetes,3/21/2026
+PAT028,66,M,2/7/2024,"GRANU FINK® femina, Hartkapseln",1,20.29,Once daily,FALSE,1,1,2/8/2024 0:00,-751,TRUE,testuser27@example.com,Penicillin,Type 2 Diabetes,3/19/2026
+PAT008,42,M,2/6/2024,Cetaphil Sanft glättende SA Reinigung,1,13.95,Once daily,FALSE,1,1,2/7/2024 0:00,-752,TRUE,testuser7@example.com,NSAIDs,Type 2 Diabetes,3/3/2026
+PAT029,32,F,2/5/2024,Multivitamin Fruchtgummibärchen vegan u zuckerfrei,1,12.74,Once daily,FALSE,1,1,2/6/2024 0:00,-753,TRUE,testuser28@example.com,Penicillin,Hypertension,3/3/2026
+PAT030,59,M,2/4/2024,MULTILAC Darmsynbiotikum,1,9.99,Once daily,FALSE,1,1,2/5/2024 0:00,-754,TRUE,testuser29@example.com,Sulfa Drugs,None,3/11/2026
+PAT006,71,M,2/3/2024,Vitasprint Duo Energie,1,16.95,Once daily,FALSE,1,1,2/4/2024 0:00,-755,TRUE,testuser5@example.com,None,Hypertension,3/19/2026
+PAT031,43,F,2/2/2024,SAW PALMETO (SÄGEPALME) 350 mg,1,8.47,Once daily,FALSE,1,1,2/3/2024 0:00,-756,TRUE,testuser30@example.com,Penicillin,None,3/29/2026
+PAT002,62,M,2/1/2024,Aqualibra 80 mg/90 mg/180 mg Filmtabletten,1,27.82,Twice daily,TRUE,2,0.5,2/1/2024 12:00,-758,TRUE,testuser1@example.com,Penicillin,Type 2 Diabetes,3/12/2026
+PAT032,37,M,1/31/2024,Augentropfen RedCare,1,12.69,Three times daily,FALSE,1,1,2/1/2024 0:00,-758,TRUE,testuser31@example.com,None,Hypertension,3/11/2026
+PAT033,54,F,1/30/2024,Vitamin B-Komplex-ratiopharm,1,24.97,Once daily,FALSE,1,1,1/31/2024 0:00,-759,TRUE,testuser32@example.com,Sulfa Drugs,Asthma,2/23/2026
+PAT001,45,F,1/29/2024,"FeniHydrocort Creme 0,25 %",1,8.59,Twice daily,FALSE,2,0.5,1/29/2024 12:00,-761,TRUE,testuser0@example.com,None,None,3/12/2026
+PAT034,48,M,1/28/2024,"Livocab® direkt Augentropfen, 0,05 % Augentropfen, Suspension",1,14.99,Twice daily,TRUE,2,0.5,1/28/2024 12:00,-762,TRUE,testuser33@example.com,NSAIDs,None,2/28/2026
+PAT035,30,F,1/27/2024,Osa Schorf Spray,1,15.45,As needed,FALSE,1,1,1/28/2024 0:00,-762,TRUE,testuser34@example.com,Sulfa Drugs,Asthma,2/28/2026
+PAT008,42,M,1/26/2024,Cromo-ratiopharm® Augentropfen Einzeldosis,1,7.59,As needed,FALSE,1,1,1/27/2024 0:00,-763,TRUE,testuser7@example.com,Penicillin,Type 2 Diabetes,3/20/2026
+PAT002,62,M,1/25/2024,"Loperamid akut - 1 A Pharma®, 2 mg Hartkapseln",1,3.93,As needed,FALSE,1,1,1/26/2024 0:00,-764,TRUE,testuser1@example.com,Penicillin,Type 2 Diabetes,3/14/2026
+PAT001,34,Male,46259,Paracetamol 500 mg,10,250,once daily,FALSE,1,10,46269,2,TRUE,p001@example.com,None,None,2/26/2026
+PAT002,41,Female,46260,Dolo 650,15,525,once daily,FALSE,1,15,46275,4,FALSE,p002@example.com,None,None,3/27/2026
+PAT003,29,Male,46258,Crocin Advance,10,300,once daily,FALSE,1,10,46268,1,TRUE,p003@example.com,None,None,2/26/2026
+PAT004,36,Female,46257,Cetirizine 10 mg,10,200,once daily,FALSE,1,10,46267,0,TRUE,p004@example.com,None,Asthma,2/18/2026
+PAT005,52,Male,46254,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46259,-8,FALSE,p005@example.com,None,None,3/11/2026
+PAT001,47,Female,46256,Amoxicillin 500 mg,10,1100,twice daily,TRUE,2,5,46261,-6,FALSE,p006@example.com,Penicillin,None,3/8/2026
+PAT006,58,Male,46255,Pantoprazole 40 mg,15,1425,once daily,TRUE,1,15,46270,3,TRUE,p007@example.com,None,GERD,2/18/2026
+PAT007,61,Female,46252,Metformin 500 mg,20,1200,twice daily,TRUE,2,10,46262,-5,TRUE,p008@example.com,None,Diabetes,3/23/2026
+PAT008,65,Male,46253,Amlodipine 5 mg,15,825,once daily,TRUE,1,15,46268,1,TRUE,p009@example.com,None,Hypertension,3/19/2026
+PAT002,27,Female,46261,ORS Powder,5,100,as needed,FALSE,1,5,46266,-1,FALSE,p010@example.com,None,None,3/9/2026
+PAT009,35,Male,46260,Ibuprofen 400 mg,10,450,once daily,FALSE,1,10,46270,3,TRUE,p011@example.com,NSAIDs,None,2/20/2026
+PAT010,59,Female,46258,Aspirin 75 mg,14,280,once daily,FALSE,1,14,46272,5,FALSE,p012@example.com,None,Cardiac,3/4/2026
+PAT003,43,Male,46256,Omeprazole 20 mg,15,1350,once daily,TRUE,1,15,46271,4,FALSE,p013@example.com,None,GERD,2/17/2026
+PAT011,31,Female,46259,Levocetirizine 5 mg,10,350,once daily,FALSE,1,10,46269,2,TRUE,p014@example.com,None,None,2/18/2026
+PAT012,38,Male,46257,Vitamin C Tablets,20,1200,once daily,FALSE,1,20,46277,10,FALSE,p015@example.com,None,None,3/13/2026
+PAT006,46,Female,46255,Zincovit Syrup,1,85,once daily,FALSE,1,7,46262,-5,TRUE,p016@example.com,None,None,3/6/2026
+PAT013,63,Male,46254,Losartan 50 mg,15,1125,once daily,TRUE,1,15,46269,2,TRUE,p017@example.com,None,Hypertension,3/8/2026
+PAT014,55,Female,46252,Atorvastatin 10 mg,10,1100,once daily,TRUE,1,10,46262,-5,TRUE,p018@example.com,None,Cardiac,2/24/2026
+PAT015,40,Male,46256,Salbutamol Inhaler,1,150,as needed,TRUE,1,30,46286,19,FALSE,p019@example.com,None,Asthma,3/3/2026
+PAT001,26,Female,46261,Loperamide 2 mg,10,400,as needed,FALSE,1,10,46271,4,FALSE,p020@example.com,None,None,3/9/2026
+PAT016,44,Male,46258,Diclofenac 50 mg,10,400,once daily,FALSE,1,10,46268,1,TRUE,p021@example.com,NSAIDs,None,3/17/2026
+PAT017,50,Female,46257,Ranitidine 150 mg,15,825,once daily,TRUE,1,15,46272,5,FALSE,p022@example.com,None,GERD,3/23/2026
+PAT018,37,Male,46256,Domperidone 10 mg,10,650,once daily,TRUE,1,10,46266,-1,TRUE,p023@example.com,None,None,3/25/2026
+PAT008,42,Female,46255,Ondansetron 4 mg,10,700,once daily,TRUE,1,10,46265,-2,TRUE,p024@example.com,None,None,3/18/2026
+PAT019,33,Male,46259,Cough Syrup (Benadryl),1,95,twice daily,FALSE,2,5,46264,-3,TRUE,p025@example.com,None,None,3/19/2026
+PAT020,39,Female,46258,Digene Tablets,15,675,as needed,FALSE,1,15,46273,6,FALSE,p026@example.com,None,None,3/14/2026
+PAT002,48,Male,46257,Calcium + Vitamin D3,15,1800,once daily,FALSE,1,15,46272,5,FALSE,p027@example.com,None,Osteoporosis,3/17/2026
+PAT011,35,Female,46256,Iron Folic Acid Tablets,30,1050,once daily,FALSE,1,30,46286,19,FALSE,p028@example.com,None,Anemia,2/26/2026
+PAT021,57,Male,46255,Insulin Injection,1,450,daily,TRUE,1,30,46285,18,FALSE,p029@example.com,None,Diabetes,3/7/2026
+PAT022,46,Female,46254,Glimepiride 2 mg,15,1275,once daily,TRUE,1,15,46269,2,TRUE,p030@example.com,None,Diabetes,2/17/2026
+PAT023,34,Male,46259,Dicyclomine 10 mg,10,500,once daily,TRUE,1,10,46269,2,TRUE,p031@example.com,None,IBS,2/24/2026
+PAT024,29,Female,46258,Clotrimazole Cream,1,60,twice daily,FALSE,2,7,46265,-2,TRUE,p032@example.com,None,None,3/7/2026
+PAT003,51,Male,46257,Betadine Solution,1,75,as needed,FALSE,1,10,46267,0,TRUE,p033@example.com,None,None,3/26/2026
+PAT025,40,Female,46256,Neosporin Ointment,1,90,twice daily,FALSE,2,5,46261,-6,TRUE,p034@example.com,None,None,2/22/2026
+PAT026,60,Male,46255,Lactulose Syrup,1,130,once daily,FALSE,1,10,46265,-2,TRUE,p035@example.com,None,Constipation,2/28/2026
+PAT001,44,Female,46254,Montelukast 10 mg,10,1400,once daily,TRUE,1,10,46264,-3,TRUE,p036@example.com,None,Asthma,3/20/2026
+PAT027,53,Male,46253,Budesonide Inhaler,1,220,daily,TRUE,1,30,46283,16,FALSE,p037@example.com,None,Asthma,3/21/2026
+PAT028,62,Female,46252,Glyceryl Trinitrate,10,950,as needed,TRUE,1,30,46282,15,FALSE,p038@example.com,None,Cardiac,3/19/2026
+PAT008,35,Male,46259,Cefixime 200 mg,10,1600,once daily,TRUE,1,10,46269,2,FALSE,p039@example.com,None,None,3/3/2026
+PAT029,28,Female,46258,Mupirocin Ointment,1,85,twice daily,FALSE,2,7,46265,-2,TRUE,p040@example.com,None,None,3/3/2026
+PAT030,6,Female,46257,Paracetamol Syrup,1,40,once daily,FALSE,1,5,46262,-5,TRUE,p041@example.com,None,None,3/11/2026
+PAT006,11,Male,46256,Albendazole 400 mg,1,30,single dose,FALSE,1,1,46257,-10,FALSE,p042@example.com,None,None,3/19/2026
+PAT031,49,Female,46255,Hydrochlorothiazide 12.5 mg,15,1050,once daily,TRUE,1,15,46270,3,TRUE,p043@example.com,None,Hypertension,3/29/2026
+PAT002,36,Male,46254,Famotidine 20 mg,10,650,once daily,TRUE,1,10,46264,-3,TRUE,p044@example.com,None,GERD,3/12/2026
+PAT032,58,Female,46253,Baclofen 10 mg,10,1100,once daily,TRUE,1,10,46263,-4,TRUE,p045@example.com,None,Muscle Spasm,3/11/2026
+PAT033,47,Male,46252,Tramadol 50 mg,10,1500,once daily,TRUE,1,10,46262,-5,TRUE,p046@example.com,None,Pain,2/23/2026
+PAT001,39,Female,46260,Dolo 650 mg,15,525,once daily,FALSE,1,15,46275,4,FALSE,p047@example.com,None,None,3/12/2026
+PAT034,33,Male,46259,Cetirizine 500 mg,10,300,once daily,FALSE,1,10,46269,2,TRUE,p048@example.com,None,None,2/28/2026
+PAT035,41,Female,46258,Cetirizine 650 mg,10,350,once daily,FALSE,1,10,46268,1,TRUE,p049@example.com,None,Asthma,2/28/2026
+PAT008,52,Male,46254,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46259,-8,FALSE,p050@example.com,None,None,3/20/2026
+PAT002,47,Female,46256,Amoxicillin 650 mg,10,1300,twice daily,TRUE,2,5,46261,-6,FALSE,p051@example.com,Penicillin,None,3/14/2026
+PAT001,29,Male,46260,Dolo 650 mg,15,525,once daily,FALSE,1,15,46275,4,FALSE,p052@example.com,None,None,2/26/2026
+PAT002,36,Female,46259,Dolo 250 mg,10,200,once daily,FALSE,1,10,46269,2,TRUE,p053@example.com,None,None,3/27/2026
+PAT003,55,Male,46255,Pantoprazole 650 mg,15,1650,once daily,TRUE,1,15,46270,3,TRUE,p054@example.com,None,GERD,2/26/2026
+PAT004,61,Female,46253,Amlodipine 250 mg,15,750,once daily,TRUE,1,15,46268,1,TRUE,p055@example.com,None,Hypertension,2/18/2026
+PAT005,27,Male,46261,ORS 500 mg,5,100,as needed,FALSE,1,5,46266,-1,FALSE,p056@example.com,None,None,3/11/2026
+PAT001,58,Female,46252,Metformin 500 mg,20,1200,twice daily,TRUE,2,10,46262,-5,TRUE,p057@example.com,None,Diabetes,3/8/2026
+PAT006,46,Male,46255,Azithromycin 250 mg,6,450,once daily,TRUE,1,6,46261,-6,FALSE,p058@example.com,None,None,2/18/2026
+PAT007,34,Female,46258,Amoxicillin 500 mg,10,1100,twice daily,TRUE,2,5,46263,-4,FALSE,p059@example.com,Penicillin,None,3/23/2026
+PAT008,49,Male,46256,Pantoprazole 500 mg,15,1500,once daily,TRUE,1,15,46271,4,FALSE,p060@example.com,None,GERD,3/19/2026
+PAT002,64,Female,46254,Amlodipine 500 mg,15,825,once daily,TRUE,1,15,46269,2,TRUE,p061@example.com,None,Hypertension,3/9/2026
+PAT009,31,Male,46260,ORS 500 mg,5,100,as needed,FALSE,1,5,46266,-1,FALSE,p062@example.com,None,None,2/20/2026
+PAT010,57,Female,46253,Metformin 650 mg,20,1400,twice daily,TRUE,2,10,46263,-4,TRUE,p063@example.com,None,Diabetes,3/4/2026
+PAT003,28,Male,46259,Paracetamol 250 mg,10,180,once daily,FALSE,1,10,46269,2,TRUE,p064@example.com,None,None,2/17/2026
+PAT011,35,Female,46258,Crocin 250 mg,10,220,once daily,FALSE,1,10,46268,1,TRUE,p065@example.com,None,None,2/18/2026
+PAT012,42,Male,46256,Paracetamol 650 mg,15,525,once daily,FALSE,1,15,46271,4,FALSE,p066@example.com,None,None,3/13/2026
+PAT006,50,Female,46254,Crocin 250 mg,10,220,once daily,FALSE,1,10,46264,-3,TRUE,p067@example.com,None,None,3/6/2026
+PAT013,61,Male,46253,Azithromycin 650 mg,5,780,once daily,TRUE,1,5,46258,-9,FALSE,p068@example.com,None,None,3/8/2026
+PAT014,39,Female,46257,Cetirizine 250 mg,10,180,once daily,FALSE,1,10,46267,0,TRUE,p069@example.com,None,Asthma,2/24/2026
+PAT015,48,Male,46255,Pantoprazole 250 mg,15,900,once daily,TRUE,1,15,46270,3,TRUE,p070@example.com,None,GERD,3/3/2026
+PAT001,33,Female,46259,Crocin 500 mg,10,300,once daily,FALSE,1,10,46269,2,TRUE,p071@example.com,None,None,3/9/2026
+PAT016,56,Male,46256,Pantoprazole 650 mg,15,1650,once daily,TRUE,1,15,46271,4,FALSE,p072@example.com,None,GERD,3/17/2026
+PAT017,59,Male,46252,Metformin 500 mg,20,1200,twice daily,TRUE,2,10,46262,-5,TRUE,p073@example.com,None,Diabetes,3/23/2026
+PAT018,64,Female,46253,Amlodipine 650 mg,15,975,once daily,TRUE,1,15,46268,1,TRUE,p074@example.com,None,Hypertension,3/25/2026
+PAT008,55,Male,46255,Pantoprazole 650 mg,15,1650,once daily,TRUE,1,15,46270,3,TRUE,p075@example.com,None,GERD,3/18/2026
+PAT019,28,Female,46261,ORS 650 mg,5,130,as needed,FALSE,1,5,46266,-1,FALSE,p076@example.com,None,None,3/19/2026
+PAT020,34,Male,46259,Dolo 500 mg,10,300,once daily,FALSE,1,10,46269,2,TRUE,p077@example.com,None,None,3/14/2026
+PAT002,47,Female,46256,Amoxicillin 500 mg,10,1100,twice daily,TRUE,2,5,46261,-6,FALSE,p078@example.com,Penicillin,None,3/17/2026
+PAT011,36,Male,46258,Cetirizine 650 mg,10,350,once daily,FALSE,1,10,46268,1,TRUE,p079@example.com,None,Asthma,2/26/2026
+PAT021,61,Female,46253,Amlodipine 650 mg,15,975,once daily,TRUE,1,15,46268,1,TRUE,p080@example.com,None,Hypertension,3/7/2026
+PAT022,52,Male,46254,Amoxicillin 650 mg,10,1300,twice daily,TRUE,2,5,46259,-8,FALSE,p081@example.com,Penicillin,None,2/17/2026
+PAT023,29,Female,46260,Dolo 250 mg,10,200,once daily,FALSE,1,10,46270,3,TRUE,p082@example.com,None,None,2/24/2026
+PAT024,41,Male,46256,Paracetamol 650 mg,15,525,once daily,FALSE,1,15,46271,4,FALSE,p083@example.com,None,None,3/7/2026
+PAT003,58,Female,46252,Amlodipine 650 mg,15,975,once daily,TRUE,1,15,46267,0,TRUE,p084@example.com,None,Hypertension,3/26/2026
+PAT025,35,Male,46259,Crocin 650 mg,15,450,once daily,FALSE,1,15,46274,7,FALSE,p085@example.com,None,None,2/22/2026
+PAT026,32,Female,46258,Dolo 250 mg,10,200,once daily,FALSE,1,10,46268,1,TRUE,p086@example.com,None,None,2/28/2026
+PAT001,44,Male,46257,Dolo 500 mg,10,300,once daily,FALSE,1,10,46267,0,TRUE,p087@example.com,None,None,3/20/2026
+PAT027,37,Female,46256,Crocin 500 mg,10,300,once daily,FALSE,1,10,46266,-1,TRUE,p088@example.com,None,None,3/21/2026
+PAT028,26,Male,46261,Cetirizine 250 mg,10,180,once daily,FALSE,1,10,46271,4,FALSE,p089@example.com,None,Asthma,3/19/2026
+PAT008,39,Female,46258,Paracetamol 500 mg,10,250,once daily,FALSE,1,10,46268,1,TRUE,p090@example.com,None,None,3/3/2026
+PAT029,56,Male,46253,Crocin 650 mg,15,450,once daily,FALSE,1,15,46268,1,TRUE,p091@example.com,None,None,3/3/2026
+PAT030,33,Female,46260,ORS 650 mg,5,130,as needed,FALSE,1,5,46265,-2,TRUE,p092@example.com,None,None,3/11/2026
+PAT006,51,Male,46255,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46260,-7,FALSE,p093@example.com,None,None,3/19/2026
+PAT031,47,Female,46256,Amoxicillin 650 mg,10,1300,twice daily,TRUE,2,5,46261,-6,FALSE,p094@example.com,Penicillin,None,3/29/2026
+PAT002,29,Male,46260,Paracetamol 500 mg,10,250,once daily,FALSE,1,10,46270,3,TRUE,p095@example.com,None,None,3/12/2026
+PAT032,62,Female,46252,Dolo 650 mg,15,525,once daily,FALSE,1,15,46267,0,TRUE,p096@example.com,None,None,3/11/2026
+PAT033,48,Male,46255,Cetirizine 250 mg,10,180,once daily,FALSE,1,10,46265,-2,TRUE,p097@example.com,None,Asthma,2/23/2026
+PAT001,54,Female,46253,Pantoprazole 500 mg,15,1500,once daily,TRUE,1,15,46268,1,TRUE,p098@example.com,None,GERD,3/12/2026
+PAT034,36,Male,46259,Crocin 250 mg,10,220,once daily,FALSE,1,10,46269,2,TRUE,p099@example.com,None,None,2/28/2026
+PAT035,41,Female,46258,Crocin 650 mg,15,450,once daily,FALSE,1,15,46273,6,FALSE,p100@example.com,None,None,2/28/2026
+PAT008,58,Male,46252,Pantoprazole 250 mg,15,900,once daily,TRUE,1,15,46267,0,TRUE,p101@example.com,None,GERD,3/20/2026
+PAT002,27,Female,46261,Dolo 650 mg,15,525,once daily,FALSE,1,15,46276,5,FALSE,p102@example.com,None,None,3/14/2026
+PAT001,44,Male,46257,Dolo 650 mg,15,525,once daily,FALSE,1,15,46272,1,TRUE,p103@example.com,None,None,2/26/2026
+PAT002,35,Female,46260,Crocin 250 mg,10,220,once daily,FALSE,1,10,46270,3,TRUE,p104@example.com,None,None,3/27/2026
+PAT003,63,Male,46254,Dolo 650 mg,15,525,once daily,FALSE,1,15,46269,2,TRUE,p105@example.com,None,None,2/26/2026
+PAT004,52,Female,46255,Amlodipine 250 mg,15,750,once daily,TRUE,1,15,46270,3,TRUE,p106@example.com,None,Hypertension,2/18/2026
+PAT005,46,Male,46256,Metformin 250 mg,20,1000,twice daily,TRUE,2,10,46266,-1,TRUE,p107@example.com,None,Diabetes,3/11/2026
+PAT001,39,Female,46258,Cetirizine 500 mg,10,300,once daily,FALSE,1,10,46268,1,TRUE,p108@example.com,None,Asthma,3/8/2026
+PAT006,31,Male,46259,ORS 250 mg,5,50,as needed,FALSE,1,5,46264,-3,TRUE,p109@example.com,None,None,2/18/2026
+PAT007,55,Female,46253,Dolo 650 mg,15,525,once daily,FALSE,1,15,46268,1,TRUE,p110@example.com,None,None,3/23/2026
+PAT008,34,Male,46260,Crocin 250 mg,10,220,once daily,FALSE,1,10,46270,3,TRUE,p111@example.com,None,None,3/19/2026
+PAT002,42,Female,46258,Pantoprazole 250 mg,15,900,once daily,TRUE,1,15,46273,6,FALSE,p112@example.com,None,GERD,3/9/2026
+PAT009,28,Male,46261,Crocin 250 mg,10,220,once daily,FALSE,1,10,46271,4,FALSE,p113@example.com,None,None,2/20/2026
+PAT010,60,Female,46252,Dolo 250 mg,10,200,once daily,FALSE,1,10,46262,-5,TRUE,p114@example.com,None,None,3/4/2026
+PAT003,49,Male,46255,Crocin 500 mg,10,300,once daily,FALSE,1,10,46265,-2,TRUE,p115@example.com,None,None,2/17/2026
+PAT011,37,Female,46257,Amlodipine 650 mg,15,975,once daily,TRUE,1,15,46272,5,FALSE,p116@example.com,None,Hypertension,2/18/2026
+PAT012,44,Male,46256,ORS 650 mg,5,130,as needed,FALSE,1,5,46261,-6,TRUE,p117@example.com,None,None,3/13/2026
+PAT006,56,Female,46253,Amoxicillin 250 mg,10,900,twice daily,TRUE,2,5,46258,-9,FALSE,p118@example.com,Penicillin,None,3/6/2026
+PAT013,33,Male,46260,Metformin 650 mg,20,1400,twice daily,TRUE,2,10,46270,3,TRUE,p119@example.com,None,Diabetes,3/8/2026
+PAT014,41,Female,46258,Crocin 650 mg,15,450,once daily,FALSE,1,15,46273,6,FALSE,p120@example.com,None,None,2/24/2026
+PAT015,62,Male,46252,Azithromycin 250 mg,6,450,once daily,TRUE,1,6,46258,-9,FALSE,p121@example.com,None,None,3/3/2026
+PAT001,29,Female,46261,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46266,-1,FALSE,p122@example.com,None,None,3/9/2026
+PAT016,50,Male,46254,Paracetamol 500 mg,10,250,once daily,FALSE,1,10,46264,-3,TRUE,p123@example.com,None,None,3/17/2026
+PAT017,47,Female,46256,Paracetamol 650 mg,15,525,once daily,FALSE,1,15,46271,4,FALSE,p124@example.com,None,None,3/23/2026
+PAT018,34,Male,46259,Crocin 250 mg,10,220,once daily,FALSE,1,10,46269,2,TRUE,p125@example.com,None,None,3/25/2026
+PAT008,58,Female,46252,ORS 650 mg,5,130,as needed,FALSE,1,5,46257,-10,TRUE,p126@example.com,None,None,3/18/2026
+PAT019,36,Male,46258,Amoxicillin 650 mg,10,1300,twice daily,TRUE,2,5,46263,-4,FALSE,p127@example.com,Penicillin,None,3/19/2026
+PAT020,43,Female,46257,Pantoprazole 650 mg,15,1650,once daily,TRUE,1,15,46272,5,FALSE,p128@example.com,None,GERD,3/14/2026
+PAT002,31,Male,46260,ORS 250 mg,5,50,as needed,FALSE,1,5,46265,-2,TRUE,p129@example.com,None,None,3/17/2026
+PAT011,52,Female,46255,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46260,-7,FALSE,p130@example.com,None,None,2/26/2026
+PAT021,40,Male,46257,Amoxicillin 500 mg,10,1100,twice daily,TRUE,2,5,46262,-5,FALSE,p131@example.com,Penicillin,None,3/7/2026
+PAT022,35,Female,46259,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46264,-3,FALSE,p132@example.com,None,None,2/17/2026
+PAT023,27,Male,46261,Pantoprazole 250 mg,15,900,once daily,TRUE,1,15,46276,5,FALSE,p133@example.com,None,GERD,2/24/2026
+PAT024,60,Female,46252,Dolo 650 mg,15,525,once daily,FALSE,1,15,46267,0,TRUE,p134@example.com,None,None,3/7/2026
+PAT003,49,Male,46255,Azithromycin 250 mg,6,450,once daily,TRUE,1,6,46261,-6,FALSE,p135@example.com,None,None,3/26/2026
+PAT025,38,Female,46258,Cetirizine 650 mg,10,350,once daily,FALSE,1,10,46268,1,TRUE,p136@example.com,None,Asthma,2/22/2026
+PAT026,45,Male,46256,Paracetamol 250 mg,10,180,once daily,FALSE,1,10,46266,-1,TRUE,p137@example.com,None,None,2/28/2026
+PAT001,32,Female,46260,Azithromycin 650 mg,5,780,once daily,TRUE,1,5,46265,-2,FALSE,p138@example.com,None,None,3/20/2026
+PAT027,57,Male,46253,ORS 650 mg,5,130,as needed,FALSE,1,5,46258,-9,TRUE,p139@example.com,None,None,3/21/2026
+PAT028,41,Female,46258,Pantoprazole 650 mg,15,1650,once daily,TRUE,1,15,46273,6,FALSE,p140@example.com,None,GERD,3/19/2026
+PAT008,35,Male,46259,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46264,-3,FALSE,p141@example.com,None,None,3/3/2026
+PAT029,63,Female,46252,Amlodipine 250 mg,15,750,once daily,TRUE,1,15,46267,0,TRUE,p142@example.com,None,Hypertension,3/3/2026
+PAT030,28,Male,46261,Cetirizine 250 mg,10,180,once daily,FALSE,1,10,46271,4,FALSE,p143@example.com,None,Asthma,3/11/2026
+PAT006,46,Female,46256,Crocin 500 mg,10,300,once daily,FALSE,1,10,46266,-1,TRUE,p144@example.com,None,None,3/19/2026
+PAT031,54,Male,46254,Crocin 250 mg,10,220,once daily,FALSE,1,10,46264,-3,TRUE,p145@example.com,None,None,3/29/2026
+PAT002,39,Female,46258,Amlodipine 250 mg,15,750,once daily,TRUE,1,15,46273,6,FALSE,p146@example.com,None,Hypertension,3/12/2026
+PAT032,31,Male,46260,Cetirizine 500 mg,10,300,once daily,FALSE,1,10,46270,3,TRUE,p147@example.com,None,Asthma,3/11/2026
+PAT033,58,Female,46252,Crocin 250 mg,10,220,once daily,FALSE,1,10,46262,-5,TRUE,p148@example.com,None,None,2/23/2026
+PAT001,44,Male,46257,Amlodipine 250 mg,15,750,once daily,TRUE,1,15,46272,5,FALSE,p149@example.com,None,Hypertension,3/12/2026
+PAT034,36,Female,46259,Pantoprazole 250 mg,15,900,once daily,TRUE,1,15,46274,7,FALSE,p150@example.com,None,GERD,2/28/2026
+PAT035,50,Male,46255,Azithromycin 500 mg,5,600,once daily,TRUE,1,5,46260,-7,FALSE,p151@example.com,None,None,2/28/2026
