@@ -315,7 +315,7 @@
             const formData = new FormData();
             formData.append("file", fileInput.files[0]);
             try {
-                const response = await fetch('http://localhost:8000/upload', { method: 'POST', body: formData });
+                const response = await fetch('/upload', { method: 'POST', body: formData });
                 const data = await response.json();
                 verifiedPrescriptionData = data.extracted_text;
                 document.getElementById('uploadStatus').innerText = "VERIFIED";
@@ -347,7 +347,7 @@
 
             try {
                 const activeEmail = document.getElementById('patientSelector').value;
-                const response = await fetch('http://localhost:8000/chat', {
+                const response = await fetch('/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ text: contextText, email: activeEmail })
@@ -383,7 +383,7 @@
             const out = document.getElementById('adminOutput');
             out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--cyan-neon);'>Establishing DB Handshake...</span>";
             try {
-                const response = await fetch('http://localhost:8000/api/admin');
+                const response = await fetch('/api/admin');
                 const data = await response.json();
                 
                 let html = `<b style="font-size: 15px; color: #fff;">SYSTEM KPIs:</b> Total SKUs: [${data.stats.total_medicines}] | <span style="color:#f59e0b">Low Stock: [${data.stats.low_stock}]</span> | <span style="color:var(--red-neon)">Depleted: [${data.stats.out_of_stock}]</span><hr style="border-color: rgba(6,182,212,0.2); margin: 15px 0;">`;
@@ -416,7 +416,7 @@
         async function trigger7DayReminders() {
             alert("SYS WARNING: Initiating automated outreach to critical patients...");
             try {
-                const response = await fetch('http://localhost:8000/api/send_weekly_reminders', { method: 'POST' });
+                const response = await fetch('/api/send_weekly_reminders', { method: 'POST' });
                 const result = await response.json();
                 alert(">> TRANSMISSION SUCCESS: " + result.message);
             } catch (e) { alert("ERROR: Outreach server offline."); }
@@ -426,7 +426,7 @@
             const out = document.getElementById('predictOutput');
             out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--cyan-neon);'>Executing internal SQL heuristic models... (Est. 15s)</span>";
             try {
-                const response = await fetch('http://localhost:8000/api/predict');
+                const response = await fetch('/api/predict');
                 const data = await response.json();
                 out.innerHTML = data.report.replace(/\n/g, '<br>');
                 out.style.color = "var(--cyan-neon)";
@@ -437,7 +437,7 @@
             const out = document.getElementById('envOutput');
             out.innerHTML = "<span style='animation: blink 1s infinite; color: var(--green-neon);'>Uplinking to Open-Meteo & Epidemic feeds... (Est. 15s)</span>";
             try {
-                const response = await fetch('http://localhost:8000/api/environmental_alerts');
+                const response = await fetch('/api/environmental_alerts');
                 const data = await response.json();
                 out.innerHTML = data.report.replace(/\n/g, '<br>');
                 out.style.color = "var(--green-neon)";
@@ -445,4 +445,5 @@
         }
     </script>
 </body>
+
 </html>
