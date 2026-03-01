@@ -24,11 +24,13 @@ class Medicine(SQLModel, table=True):
     expiry_date: Optional[date] = None
 
     # --- DATABASE CONNECTION ENGINE ---
-if os.getenv("RAILWAY_ENVIRONMENT"):
-    # Save to the permanent Railway volume
-    sqlite_url = "sqlite:////app/data/nexus_pharmacy.db"
+# 1. Detect if we are running on Railway's Cloud or your local laptop
+if os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("RAILWAY_STATIC_URL"):
+    # Point the AI to the permanent vault!
+    sqlite_url = "sqlite:////app/data/nexus_pharmacy.db" 
 else:
-    # Save locally on your laptop
-    sqlite_url = "sqlite:///nexus_pharmacy.db"
+    # Point the AI to your local seed file when testing on your laptop
+    sqlite_url = "sqlite:///nexus_pharmacy_seed.db"
 
+# 2. Start the engine with the correct map
 engine = create_engine(sqlite_url)
