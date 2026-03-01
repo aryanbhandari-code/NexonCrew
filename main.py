@@ -256,11 +256,90 @@ async def automated_3_day_reminder_loop():
 
 @app.on_event("startup")
 async def start_background_tasks():
-    # This ignores the deprecation warning and safely starts your background loop
+    print("⚙️ Initializing database tables in Railway Volume...")
+    
+    # --- ⚠️ THE NUCLEAR RESET BUTTON ⚠️ ---
+    # Destroys the old tables so we can inject the massive CSV dataset.
+    # YOU MUST COMMENT THIS OUT AFTER IT RUNS SUCCESSFULLY ONCE!
+    SQLModel.metadata.drop_all(engine) 
+    
+    # 1. Create fresh, empty tables
+    SQLModel.metadata.create_all(engine)
+    
+    # 2. Inject the Full CSV Dataset
+    with Session(engine) as session:
+        existing_patient = session.exec(select(Patient)).first()
+        
+        if not existing_patient:
+            print("📂 Reading massive CSV datasets...")
+            
+            # --- A. LOAD MEDICINES FROM CSV ---
+            if os.path.exists("products_policy_ready11_final.csv"):
+                with open("products_policy_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
+                    reader = csv.DictReader(file)
+                    med_count = 0
+                    for row in reader:
+                        req_rx = str(row['prescription_required']).strip().lower() == 'true'
+                        med = Medicine(
+                            name=row['product_name'],
+                            stock_quantity=int(row['current_stock'] or 0),
+                            requires_prescription=req_rx,
+                            expiry_date=row['expiry_date']
+                        )
+                        session.add(med)
+                        med_count += 1
+                        if med_count % 500 == 0:
+                            session.commit() # Batch commit
+                session.commit()
+                print(f"✅ {med_count} Medicines injected from CSV!")
+            else:
+                print("❌ ERROR: products_policy CSV not found!")
+
+            # --- B. LOAD PATIENTS FROM CSV ---
+            if os.path.exists("order_history_intelligence_ready11_final.csv"):
+                with open("order_history_intelligence_ready11_final.csv", mode='r', encoding='utf-8-sig') as file:
+                    reader = csv.DictReader(file)
+                    pat_count = 0
+                    for row in reader:
+                        trigger = str(row['refill_trigger']).strip().lower() == 'true'
+                        
+                        # Clean the runout date
+                        raw_date = row['expected_runout_date'].split(' ')[0]
+                        try:
+                            clean_date = datetime.strptime(raw_date, "%m/%d/%Y").date()
+                        except ValueError:
+                            clean_date = datetime.date.today() # Safe fallback
+                        
+                        patient = Patient(
+                            patient_email=row['patient_email'],
+                            patient_name=row['patient_id'],
+                            patient_age=int(float(row['patient_age'] or 0)),
+                            patient_gender=row['patient_gender'],
+                            allergies=row.get('allergies', 'None') or 'None',
+                            past_diseases=row.get('past_diseases', 'None') or 'None',
+                            needs_refill_for=row['product_name'],
+                            refill_due_date=clean_date,
+                            refill_trigger=trigger
+                        )
+                        session.add(patient)
+                        pat_count += 1
+                        if pat_count % 500 == 0:
+                            session.commit() # Batch commit
+                            print(f"💾 Saved {pat_count} patients so far...")
+                session.commit()
+                print(f"✅ {pat_count} Patients injected from CSV!")
+            else:
+                print("❌ ERROR: order_history CSV not found!")
+                
+            print("🎉 FULL ENTERPRISE DATASET SUCCESSFULLY SAVED!")
+
+    # 3. Start the background loop safely
+    print("🚀 Starting AI Outreach Protocol...")
     asyncio.create_task(automated_3_day_reminder_loop())
 
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
